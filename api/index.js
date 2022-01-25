@@ -25,7 +25,6 @@ const { getApiToDb } = require('./src/controllers/artworks');
 
 const {Role }= require ('./src/db');
 
-const port = process.env.PORT || 5040;
 
 
 function initial() {
@@ -48,7 +47,7 @@ function initial() {
 
 // Syncing all the models at once.
 conn.sync({ force: true}).then(() => {
-  server.listen(port, () => {
+  server.listen(process.env.PORT, () => {
     console.log('o|O_O|o robot Σωκράτης listening at 5040');
      // eslint-disable-line no-console
 initial()
