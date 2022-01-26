@@ -5,12 +5,12 @@ const typesRoutes = require('./types_of_art');
 const usersRoutes = require('./users');
 const shoppingCartRoutes = require('./shopping_cart');
 const galleryRoutes = require('./gallery');
-
+const adminRoutes = require("./admin");
 const { verifySignUp,authJwt} = require('../middleware');
 
 const router = Router();
 
-const { signup, signin, googleSignUp } = require("../controllers/auth.controller");
+const { signup, signin, googleSignUp,refreshToken, } = require("../controllers/auth.controller");
 
 router.post(
   "/auth/signup",
@@ -40,8 +40,11 @@ router.get(
   adminBoard
 );
 
-router.use("/users", [authJwt.verifyToken, authJwt.isAdmin], usersRoutes);
 
+router.post("/auth/refreshToken", refreshToken);
+/////////////////////////////////////////////
+router.use("/users", [authJwt.verifyToken, authJwt.isUser], usersRoutes);
+router.use("/admin", [authJwt.verifyToken, authJwt.isAdmin], adminRoutes);
 router.use('/home', artworkRoutes);
 router.use('/types', typesRoutes);
 
