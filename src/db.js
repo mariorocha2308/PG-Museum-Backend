@@ -39,7 +39,7 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/gallery`,
+        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/galleryb`,
         { logging: false, native: false }
       );
 
@@ -64,7 +64,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
-const { User, Artwork, Type, Shopping_cart, Role} = sequelize.models;
+const {RefreshToken, User, Artwork, Type, Shopping_cart, Role} = sequelize.models;
 
 
 //User.hasMany(Shopping_cart, {as:"shopping_cart", foreignKey: 'user_id'});
@@ -77,6 +77,9 @@ Type.belongsToMany(Artwork, {through: 'artwork_type'});
 
 User.belongsToMany(Role, {through: "user_Roles" });
 Role.belongsToMany(User, {through: "user_Roles" });
+
+RefreshToken.belongsTo(User,{ foreignKey: 'userId', targetKey: 'id'})
+User.hasOne(RefreshToken, {foreignKey: 'userId', targetKey: 'id'})
 
 module.exports = {
   ...sequelize.models, 
