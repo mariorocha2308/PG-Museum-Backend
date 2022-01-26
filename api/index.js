@@ -44,13 +44,12 @@ function initial() {
   });
 }
 
-
 // Syncing all the models at once.
 conn.sync({ force: true}).then(() => {
   server.listen(process.env.PORT, () => {
     console.log('o|O_O|o robot Σωκράτης listening at 5040');
      // eslint-disable-line no-console
-initial()
+initial() 
   });
   getTypes(); // <<<--- para iniciar la base de datos
   getApiToDb(); 
