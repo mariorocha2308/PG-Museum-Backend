@@ -65,7 +65,6 @@ const signup = (req, res) => {
     name: req.body.name,
     username: req.body.username,
     email:req.body.email,
-    image:req.body.image,
     password: bcrypt.hashSync(req.body.password, 8),
   })
     .then((user) => {
