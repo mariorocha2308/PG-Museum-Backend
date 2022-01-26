@@ -1,11 +1,12 @@
-const { User, Role } = require("../db");
-const config = require("../config/auth.config");
+const { User, Role, RefreshToken } = require("../db");
+const {jwtExpiration,secret}= require("../config/auth.config");
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op;
 var bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
 const { Oauth2Client } = require("google-auth-library");
 const dotenv = require('dotenv');
+
 
 
 dotenv.config();
@@ -26,7 +27,7 @@ const googleSignUp = async (req, res) => {
     },
   });
   if (user) {
-    const token = jwt.sign({ id: user.id }, config.secret, {
+    const token = jwt.sign({ id: user.id }, secret, {
       expiresIn: 86400,
     });
     res.send({
@@ -44,7 +45,7 @@ const googleSignUp = async (req, res) => {
       password: "",
     });
     newUser.setRoles([1]);
-    const token = jwt.sign({ id: newUser.id }, config.secret, {
+    const token = jwt.sign({ id: newUser.id }, secret, {
       expiresIn: 86400,
     });
     res.send({
@@ -65,7 +66,6 @@ const signup = (req, res) => {
     name: req.body.name,
     username: req.body.username,
     email:req.body.email,
-    image: req.body.image,
     password: bcrypt.hashSync(req.body.password, 8),
   })
     .then((user) => {
@@ -95,14 +95,13 @@ const signup = (req, res) => {
     });
 };
 
-
 const signin = (req, res) => {
   User.findOne({
     where: {
       username: req.body.username,
     },
   })
-    .then((user) => {
+    .then(async(user) => {
       if (!user) {
         return res.status(404).send({ message: "Usuario no Encontrado." });
       }
@@ -119,31 +118,88 @@ const signin = (req, res) => {
         });
       }
 
-      var token = jwt.sign({ id: user.id }, config.secret, {
-        expiresIn: 86400, // 24 hours
+     const token = jwt.sign({ id: user.id }, secret, {
+        expiresIn:jwtExpiration // 24 hours 
       });
 
-      var authorities = [];
+      let refreshToken = await RefreshToken.createToken(user);
+
+
+     let authorities = [];
       user.getRoles().then(roles => {
         for (let i = 0; i < roles.length; i++) {
-          authorities.push("ROLE_" + roles[i].name);
+          authorities.push("ROLE_" + roles[i].name.toUpperCase());
         }
         res.status(200).send({
           id: user.id,
           username: user.username,
           email: user.email,
           roles: authorities,
-          accessToken: token
+          accessToken: token,
+          refreshToken: refreshToken,
         });
       });
     })
     .catch((err) => {
       res.status(500).send({ message: err.message });
     });
+
+    
 };
+
+const refreshToken = async (req, res) => {
+
+
+  const {refreshToken: requestToken} = req.body;
+  
+  if(requestToken == null){
+  
+    return res.status(403).send({message:'"Refrescar token es Requerido'})
+  
+  }try{
+  
+    let refreshToken = await RefreshToken.findOne({
+  
+      where:{token:requestToken}
+      
+    })
+  
+    console.log(refreshToken);
+  
+    if(!refreshToken){
+  res.status(403).send({message:'No se encuentra token en la base de Datos'})
+  
+  return
+  
+  
+    }
+    if (RefreshToken.verifyExpiration(refreshToken)) {
+      RefreshToken.destroy({ where: { id: refreshToken.id } });
+      
+      res.status(403).json({
+        message: "Token ha Expirado inicie sesion nuevamente",
+      });
+      return;
+    }
+  
+    const user = refreshToken.getUser();
+    let newAccessToken = jwt.sign({ id: user.id }, secret, {
+      expiresIn:jwtExpiration,
+    });
+    return res.status(200).json({
+      accessToken: newAccessToken,
+      refreshToken: refreshToken.token
+    });
+  
+  }catch(err){
+  
+    return res.status(500).send({ message: err });
+  }
+}
 
 module.exports = {
     signin,
     signup,
     googleSignUp,
+    refreshToken
 }
