@@ -26,7 +26,6 @@ const { getApiToDb } = require('./src/controllers/artworks');
 const {Role }= require ('./src/db');
 
 
-
 function initial() {
   Role.create({
     id: 1,
