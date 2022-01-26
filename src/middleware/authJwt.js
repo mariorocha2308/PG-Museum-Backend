@@ -1,7 +1,15 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config/auth.config.js");
 const { User, Role } = require('../db');
+const { TokenExpiredError } = jwt;
 
+const catchError = (err, res) => {
+  if (err instanceof TokenExpiredError) {
+    return res.status(401).send({ message: "No Autorizado token expirado!" });
+  }
+
+  return res.sendStatus(401).send({ message: "No Autorizado!" });
+}
 
 const verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];
@@ -41,23 +49,23 @@ const isAdmin = (req, res, next) => {
   });
 };
 
-const isVendedor = (req, res, next) => {
+const isUser  = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
       for (let i = 0; i < roles.length; i++) {
-        if (roles[i].name === "vendedor") {
+        if (roles[i].name === "usuario") {
           next();
           return;
         }
       }
 
       res.status(403).send({
-        message: "Requiere ser Vendedor!"
+        message: "Requiere ser usuario!"
       });
     });
   });
 };
-
+/* 
 const isVendedorOrAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -78,13 +86,13 @@ const isVendedorOrAdmin = (req, res, next) => {
       });
     });
   });
-};
+}; */
 
 module.exports = {
 
   verifyToken,
   isAdmin,
-  isVendedor,
-  isVendedorOrAdmin
+  isUser,
+  
 
 }
