@@ -50,6 +50,7 @@ router.use('/gallery', galleryRoutes);
 router.use('/shopping', shoppingCartRoutes)
 
 router.use('/review', reviewRoutes);
+
 router.get('/', (req, res) => {
     res.status(200).send(' > > > > ||| . . . GO TO / / / to HEROKU DEPLOYMENT . . . ||| > > >');
 
