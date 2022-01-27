@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "forever": "forever index.js",
-    "test": "mocha -w ./tests/**/*.spec.js"
-  },
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env =jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+    },
   "author": "Henry",
   "license": "ISC",
   "engines": {
     "node": ">=12.18.3",
     "npm": ">=6.14.6"
-  }, 
-  
+  },
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
     "axios": "^0.21.4",
@@ -24,7 +26,7 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "google-auth-library": "^7.11.0",
     "heroku": "^7.59.2",
     "ioredis": "^4.19.2",
@@ -33,7 +35,8 @@
     "node": "^17.4.0",
     "nodemon": "^2.0.15",
     "pg": "^8.5.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
