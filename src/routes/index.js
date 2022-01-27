@@ -5,7 +5,12 @@ const typesRoutes = require('./types_of_art');
 const usersRoutes = require('./users');
 const shoppingCartRoutes = require('./shopping_cart');
 const galleryRoutes = require('./gallery');
+
 const adminRoutes = require("./admin");
+
+const reviewRoutes = require('./review');
+
+
 const { verifySignUp,authJwt} = require('../middleware');
 
 const router = Router();
@@ -47,7 +52,7 @@ router.use("/users", [authJwt.verifyToken, authJwt.isUser], usersRoutes);
 router.use("/admin", [authJwt.verifyToken, authJwt.isAdmin], adminRoutes);
 router.use('/home', artworkRoutes);
 router.use('/types', typesRoutes);
-
+router.use('/review', reviewRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/shopping', shoppingCartRoutes)
 router.get('/', (req, res) => {
