@@ -41,7 +41,8 @@ router.get(
   adminBoard
 );
 
-router.use("/users", [authJwt.verifyToken, authJwt.isAdmin], usersRoutes);
+
+router.use("/users", [authJwt.verifyToken], usersRoutes);
 
 router.use('/home', artworkRoutes);
 router.use('/types', typesRoutes);

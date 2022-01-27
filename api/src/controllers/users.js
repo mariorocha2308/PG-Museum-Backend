@@ -85,7 +85,7 @@ async function putUser(req, res, next) {
 // https-browserify    browserify-zlib    stream-http   stream-browserify  assert
 async function deleteUser(req, res, next) {
   try {
-    let { id } = req.body;
+    let { id } = req.params;
     if (id) {
       const data = await User.findOne({
         where: { id },
