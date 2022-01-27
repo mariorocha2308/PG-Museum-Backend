@@ -43,7 +43,6 @@ function initial() {
   });
 }
 
-
 // Syncing all the models at once.
 conn.sync({ force: true}).then(() => {
   server.listen(port, () => {
