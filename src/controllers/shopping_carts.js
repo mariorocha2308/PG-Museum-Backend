@@ -11,8 +11,7 @@ async function postShoppingCart(req, res) {
             price,
             total,
         });
-        // put a obra de arte stock to false
-        // artwork_id = [] map --> add artwork_id
+       
         artwork_id.map(async (art) => {
             await shoppingCart.addArtworks(art);
             const artSold = await Artwork.findOne({

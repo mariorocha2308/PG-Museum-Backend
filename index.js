@@ -22,9 +22,21 @@ const { conn } = require('./src/db.js');
 const { getTypes } = require('./src/controllers/types_of_art');
 const { getApiToDb } = require('./src/controllers/artworks');
 
-const {Role }= require ('./src/db');
+const { Role, User }= require ('./src/db');
 
 const port = process.env.PORT || 5040;
+
+async function defaultAdmin () {
+    const user = await User.create({
+      name: "Admin",
+      username: "admin",
+      email:"admin@gmail.com",
+      password: "admin",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Steve_Jobs_in_1972_Pegasus_%28retouched%29.jpg/340px-Steve_Jobs_in_1972_Pegasus_%28retouched%29.jpg"
+    });
+    await user.addRoles(3);
+}
+
 
 function initial() {
   Role.create({
@@ -49,7 +61,8 @@ conn.sync({ force: true}).then(() => {
   server.listen(port, () => {
     console.log('o|O_O|o robot Σωκράτης listening at 5040');
      // eslint-disable-line no-console
-initial()
+     defaultAdmin();
+     initial()
   });
   getTypes(); // <<<--- para iniciar la base de datos
   getApiToDb(); 

@@ -26,7 +26,7 @@ async function getApiToDb(req, res, next) {
                 301000, 301500, 302000, 302500, 303000, 303500, 304000, 304500, 305000, 305500, 306000, 306500, 307000, 307500, 308000, 308500, 309000, 309500, 310000, 310500, 311000, 400000, 450000, 500000, 550000, 600000, 650000, 750000, 800000, 850000, 950000, 1000000, 1100000, 1150000]
         
 
-            var results = apiArtwork.data.data.slice(6, 124).map((art) => {
+            var results = apiArtwork.data.data.slice(6, 125).map((art) => {
 
                 let randomPrice = allPrices[Math.floor(Math.random() * allPrices.length)];
 
