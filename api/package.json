@@ -10,12 +10,12 @@
     "test": "react-scripts test --env =jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
-    },
+  },
   "author": "Henry",
   "license": "ISC",
   "engines": {
-    "node": "12.11.1",
-    "npm": ">=8.0.0"
+    "node": ">=14.18.0",
+    "npm": ">=8.14.6"
   },
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
@@ -35,6 +35,7 @@
     "node": "^17.4.0",
     "nodemon": "^2.0.15",
     "pg": "^8.5.1",
+    "react-scripts": "^5.0.0",
     "sequelize": "^6.3.5",
     "serve": "^13.0.2"
   },
