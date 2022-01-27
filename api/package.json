@@ -14,8 +14,8 @@
   "author": "Henry",
   "license": "ISC",
   "engines": {
-    "node": ">=14.18.0",
-    "npm": ">=8.14.6"
+    "node": ">=14.x",
+    "npm": ">=8.x"
   },
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
