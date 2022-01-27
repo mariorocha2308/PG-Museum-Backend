@@ -4,40 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env =jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "start": "nodemon -L",
+    "run": "nodemon -L",
+    "test": "mocha -w ./tests/**/*.spec.js"
   },
   "author": "Henry",
   "license": "ISC",
   "engines": {
-    "node": ">=14.x",
-    "npm": ">=8.x"
+    "node": ">=12.18.3",
+    "npm": ">=6.14.6"
   },
   "dependencies": {
-    "@heroku/buildpack-registry": "^1.0.1",
     "axios": "^0.21.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "buildpack-registry": "^1.0.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.2",
+    "express": "^4.17.1",
     "google-auth-library": "^7.11.0",
-    "heroku": "^7.59.2",
     "ioredis": "^4.19.2",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "node": "^17.4.0",
     "nodemon": "^2.0.15",
     "pg": "^8.5.1",
-    "react-scripts": "^5.0.0",
-    "sequelize": "^6.3.5",
-    "serve": "^13.0.2"
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "chai": "^4.2.0",
