@@ -1,6 +1,6 @@
 const { User } = require("../db");
 
-const ROLES = ["user", "admin"];
+const ROLES = ["user", "vendedor", "admin"];
 
 const checkDuplicateUsernameOrEmail = (req, res, next) => {
   // Username

@@ -34,25 +34,25 @@ const isAdmin = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "<<<>>>Require ser Administrador!"
+        message: "Require ser Administrador!"
       });
       return;
     });
   });
 };
 
-const isUser = (req, res, next) => {
+const isVendedor = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
       for (let i = 0; i < roles.length; i++) {
-        if (roles[i].name === "user") {
+        if (roles[i].name === "vendedor") {
           next();
           return;
         }
       }
 
       res.status(403).send({
-        message: "Requiere ser User!"
+        message: "Requiere ser Vendedor!"
       });
     });
   });
@@ -84,7 +84,7 @@ module.exports = {
 
   verifyToken,
   isAdmin,
-  isUser,
+  isVendedor,
   isVendedorOrAdmin
 
 }
