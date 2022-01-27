@@ -120,3 +120,5 @@ let user_Roles = {
 console.log("ahora pasamos a");
     console.log("rol es", user_Roles.dataValues.roleId);
     console.log("rolP es", user_Roles._previousDataValues.roleId);
+
+    
