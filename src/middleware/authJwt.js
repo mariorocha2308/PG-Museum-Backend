@@ -53,7 +53,7 @@ const isUser  = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
       for (let i = 0; i < roles.length; i++) {
-        if (roles[i].name === "usuario") {
+        if (roles[i].name === "user") {
           next();
           return;
         }
@@ -89,10 +89,7 @@ const isVendedorOrAdmin = (req, res, next) => {
 }; */
 
 module.exports = {
-
   verifyToken,
   isAdmin,
   isUser,
-  
-
 }
