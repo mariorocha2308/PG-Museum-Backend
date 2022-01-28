@@ -39,7 +39,7 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/galleryb`,
+        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/gallery`,
         { logging: false, native: false }
       );
 
