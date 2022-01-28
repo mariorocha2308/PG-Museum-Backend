@@ -11,6 +11,9 @@ posteo va en deteil de artwork
 {} --->>> imprima /auth/signup/google
 trabajar Erik <<<--- en proceso
 
+4_ Sending emails using Mailgun with NodeMailer package
+
+5_ autenticar el name y password de usuario
 
 rol user_Roles {
   dataValues: {
