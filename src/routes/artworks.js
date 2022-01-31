@@ -5,11 +5,13 @@ const {
     getByName,
     postArtwork,
     getArtworkById,
+    putArtworkById
 } = require("../controllers/artworks.js");
 
-router.get('/', getApiToDb);
+router.get('/all', getApiToDb);
 router.get('/name', getByName);
-router.post('/', postArtwork);
+router.post('/post', postArtwork);
 router.get('/:id', getArtworkById);
+router.put('/put/:id', putArtworkById);
 
 module.exports = router;

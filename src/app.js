@@ -7,7 +7,13 @@ const cors = require('cors');
 const server = express();
 
 server.use(cors());
-server.options('*', cors());
+server.options('*', cors(
+  {
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "preflightContinue": false,
+    "optionsSuccessStatus": 204
+  }
+));
 
 
 require('./db.js'); 
@@ -48,3 +54,4 @@ server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
 });
 
 module.exports = server;
+

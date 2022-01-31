@@ -21,7 +21,16 @@ module.exports = (sequelize) => {
         allowNull: false,
     },
     image: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
+    resetToken:{
+      type:DataTypes.STRING
+   },
+   resetTokenExpires: { type: DataTypes.DATE },
+
+
+   passwordReset: { type: DataTypes.DATE },
   });
+
+
 };

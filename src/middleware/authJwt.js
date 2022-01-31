@@ -2,6 +2,11 @@ const jwt = require("jsonwebtoken");
 const config = require("../config/auth.config.js");
 const { User, Role } = require('../db');
 const { TokenExpiredError } = jwt;
+const { OAuth2Client }  = require("google-auth-library");
+const dotenv = require('dotenv');
+
+dotenv.config();
+const client = new OAuth2Client(process.env.REACT_APP_GOOGLE_ID);
 
 const catchError = (err, res) => {
   if (err instanceof TokenExpiredError) {
@@ -10,6 +15,7 @@ const catchError = (err, res) => {
 
   return res.sendStatus(401).send({ message: "No Autorizado!" });
 }
+
 
 const verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];
@@ -65,31 +71,10 @@ const isUser  = (req, res, next) => {
     });
   });
 };
-/* 
-const isVendedorOrAdmin = (req, res, next) => {
-  User.findByPk(req.userId).then(user => {
-    user.getRoles().then(roles => {
-      for (let i = 0; i < roles.length; i++) {
-        if (roles[i].name === "vendedor") {
-          next();
-          return;
-        }
-
-        if (roles[i].name === "admin") {
-          next();
-          return;
-        }
-      }
-
-      res.status(403).send({
-        message: "Requiere ser Vendedor o Admin!"
-      });
-    });
-  });
-}; */
 
 module.exports = {
   verifyToken,
   isAdmin,
   isUser,
+
 }

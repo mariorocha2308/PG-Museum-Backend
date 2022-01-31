@@ -1,14 +1,16 @@
 const { Op } = require("sequelize");
-const { Artwork, Type } = require("../db");
+const { Artwork, Type, Review, Rating } = require("../db");
 const { API_URL } = process.env;
 const axios = require("axios");
- 
+
 async function getApiToDb(req, res, next) {
     try {
         const foundArtworkDb = await Artwork.findAll({
-            include: {
-                model: Type,
-            },
+            include: [
+                { model: Type },
+                { model: Review },
+                { model: Rating }
+            ],
         });
         console.log("length es____", foundArtworkDb.length);
         if (foundArtworkDb.length !== 0) {
@@ -24,11 +26,13 @@ async function getApiToDb(req, res, next) {
                 157000, 157500, 158000, 158500, 159000, 159500, 160000, 160500, 161000, 161500, 162000, 162500, 163000, 163500, 164000, 164500, 165000, 165500, 166000, 166500, 167000, 167500, 168000, 168500, 169000, 169500, 170000, 170500, 171000, 171500, 172000, 172500, 173000, 173500, 174000, 174500, 175000, 175500, 176000, 176500, 177000, 177500, 178000, 178500, 179000, 179500, 180000, 180500, 181000, 181500, 182000, 182500, 183000, 183500, 184000, 184500, 185000, 185500, 186000, 186500, 187000, 187500, 188000, 188500, 189000, 189500, 190000, 190500, 191000, 191500, 192000, 192500, 193000, 193500, 194000, 194500, 195000, 195500, 196000, 196500, 197000, 197500, 198000, 198500, 199000, 199500, 200000, 200500, 201000, 201500, 202000, 202500, 203000, 203500, 204000, 204500, 205000, 205500, 206000, 206500, 207000, 207500, 208000, 208500, 209000, 209500, 210000, 210500, 211000, 211500, 212000, 212500, 213000, 213500, 214000, 214500, 215000, 215500, 216000, 216500, 217000, 217500, 218000, 218500, 219000, 219500, 220000, 220500, 221000, 221500, 222000, 222500, 223000, 223500, 224000, 224500, 225000, 225500, 226000, 226500, 227000, 227500, 228000, 228500,
                 229000, 229500, 230000, 230500, 231000, 231500, 232000, 232500, 233000, 233500, 234000, 234500, 235000, 235500, 236000, 236500, 237000, 237500, 238000, 238500, 239000, 239500, 240000, 240500, 241000, 241500, 242000, 242500, 243000, 243500, 244000, 244500, 245000, 245500, 246000, 246500, 247000, 247500, 248000, 248500, 249000, 249500, 250000, 250500, 251000, 251500, 252000, 252500, 253000, 253500, 254000, 254500, 255000, 255500, 256000, 256500, 257000, 257500, 258000, 258500, 259000, 259500, 260000, 260500, 261000, 261500, 262000, 262500, 263000, 263500, 264000, 264500, 265000, 265500, 266000, 266500, 267000, 267500, 268000, 268500, 269000, 269500, 270000, 270500, 271000, 271500, 272000, 272500, 273000, 273500, 274000, 274500, 275000, 275500, 276000, 276500, 277000, 277500, 278000, 278500, 279000, 279500, 280000, 280500, 281000, 281500, 282000, 282500, 283000, 283500, 284000, 284500, 285000, 285500, 286000, 286500, 287000, 287500, 288000, 288500, 289000, 289500, 290000, 290500, 291000, 291500, 292000, 292500, 293000, 293500, 294000, 294500, 295000, 295500, 296000, 296500, 297000, 297500, 298000, 298500, 299000, 299500, 300000, 300500,
                 301000, 301500, 302000, 302500, 303000, 303500, 304000, 304500, 305000, 305500, 306000, 306500, 307000, 307500, 308000, 308500, 309000, 309500, 310000, 310500, 311000, 400000, 450000, 500000, 550000, 600000, 650000, 750000, 800000, 850000, 950000, 1000000, 1100000, 1150000]
-        
+
+            let allRating = [5, 4, 5, 2, 4, 5, 4, 3, 6, 2, 1, 2, 3, 4, 3, 5, 6]
 
             var results = apiArtwork.data.data.slice(6, 125).map((art) => {
 
                 let randomPrice = allPrices[Math.floor(Math.random() * allPrices.length)];
+                let randomRating = allRating[Math.floor(Math.random() * allRating.length)];
 
                 if (art.images !== null) {
                     var image = art.images.web.url;
@@ -52,6 +56,7 @@ async function getApiToDb(req, res, next) {
                     title: art.title,
                     images: image,
                     price: randomPrice,
+                    rating: randomRating,
                     creation_date: art.creation_date,
                     current_location: art.current_location ? art.current_location : 'restricted information',
                     culture: art.culture,
@@ -82,30 +87,38 @@ async function getApiToDb(req, res, next) {
                         current_location: art.current_location,
                         culture: art.culture,
                         technique: art.technique,
-                        collection: art.collection,  
+                        collection: art.collection,
                         creators_id: art.creators_id,
                         creators_description: art.creators_description,
                         stock: art.stock,
                     },
-                    include: {
-                        model: Type,
-                    },
-                }); 
+                    include: [
+                        {
+                            model: Type
+                        },
+                        {
+                            model: Rating
+                        },
+                        {
+                            model: Review
+                        }
+                    ]
+                });
                 let type_id = await Type.findOne({
                     where: {
                         type: art.type
                     }
                 });
- 
-                await newArtwork[0].setTypes(type_id); // 
- 
-            }); 
+                await newArtwork[0].setTypes(type_id); 
+                newArtwork[0].addRating(art.rating);
+
+            });
             return res.json(results);
         }
     } catch (error) {
-        return 'no esta entrando en el if de la db whi???? ' + error;
+        return 'no esta entrando en el if de la db why???? ' + error;
     }
-}; 
+};
 
 
 async function getByName(req, res, next) {
@@ -118,9 +131,10 @@ async function getByName(req, res, next) {
                         [Op.iLike]: '%' + name + '%', // Op.iLike: '%' + name + '%' es una forma de buscar una palabra en un string (name) usando Op.iLike que es un operador de sequelize y trabaja con expresiones regulares
                     },
                 },
-                include: {
-                    model: Type,
-                },
+                include: [
+                    { model: Type },
+                    { model: Review }
+                ],
             })
             res.json(dbArtworks);
         }
@@ -163,9 +177,10 @@ async function getArtworkById(req, res, next) {
             where: {
                 id,
             },
-            include: {
-                model: Type,
-            },
+            include: [
+                { model: Type },
+                { model: Review }
+            ],
         });
         if (artwork) {
             res.json(artwork);
@@ -178,10 +193,61 @@ async function getArtworkById(req, res, next) {
         next(error);
     }
 };
- 
+
+
+async function putArtworkById(req, res, next) {
+    const { id } = req.params;
+    const { title, images, stock, price, description, creation_date, current_location, collection, creators_description, types } = req.body;
+    try {
+        const artwork = await Artwork.findOne({
+            where: {
+                id,
+            },
+            include: [
+                { model: Type },
+                { model: Review }
+            ],
+        });
+        if (artwork) {
+            await artwork.update({
+                title,
+                images,
+                stock,
+                price,
+                description,
+                creation_date,
+                current_location,
+                collection,
+                creators_description,
+            });
+            if (types) {
+                await artwork.setTypes(types);
+            }
+            const returnArtwork = await Artwork.findOne({
+                where: {
+                    id,
+                },
+                include: [
+                    { model: Type },
+                    { model: Review }
+                ],
+            });
+            res.json(returnArtwork);
+        } else {
+            res.status(404).json({
+                message: 'Not found',
+            });
+        }
+    } catch (error) {
+        next(error);
+    }
+};
+
+
 module.exports = {
     getApiToDb,
     getByName,
     postArtwork,
     getArtworkById,
+    putArtworkById
 };

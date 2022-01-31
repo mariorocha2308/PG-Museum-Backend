@@ -4,44 +4,44 @@ const { Op } = require("sequelize");
 const axios = require("axios");
 
 async function getUsers(req, res, next) {
-    try {
-        console.log("entramos a getUsers");
-        const users = await User.findAll({
-            attributes: ["id", "name", "username", "email", "image"],
-        });
-        const userShopping = users.map(async (user) => {
-          var shoppingCart = await Shopping_cart.findAll({
-            where: {
-              userId: user.id,
-            },
-            include: [
-              {
-                model: Artwork,
-              },
-            ],
-            attributes: ["id", "quantity", "description", "price", "total"],
-          });
-          // console.log("shoppingCart", shoppingCart);
-            return {
-                id: user.id,
-                name: user.name,
-                username: user.username,
-                email: user.email,
-                image: user.image,
-                shoppingCart: shoppingCart
-            };
-        });
-        Promise.all(userShopping).then((data) => {
-            // console.log("data", data);
-            res.status(200).send({ data });
-        });
-         
-    } catch (error) {
-        res.status(500).json({
-            message: "Error al obtener los usuarios",
-            error,
-        });
-    }
+  try {
+    console.log("entramos a getUsers");
+    const users = await User.findAll({
+      attributes: ["id", "name", "username", "email", "image"],
+    });
+    const userShopping = users.map(async (user) => {
+      var shoppingCart = await Shopping_cart.findAll({
+        where: {
+          userId: user.id,
+        },
+        include: [
+          {
+            model: Artwork,
+          },
+        ],
+        attributes: ["id", "quantity", "description", "price", "total"],
+      });
+      // console.log("shoppingCart", shoppingCart);
+      return {
+        id: user.id,
+        name: user.name,
+        username: user.username,
+        email: user.email,
+        image: user.image,
+        shoppingCart: shoppingCart
+      };
+    });
+    Promise.all(userShopping).then((data) => {
+      // console.log("data", data);
+      res.status(200).send({ data });
+    });
+
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al obtener los usuarios",
+      error,
+    });
+  }
 }
 
 
@@ -86,12 +86,12 @@ async function putUser(req, res, next) {
 async function deleteUser(req, res, next) {
   try {
     let { id } = req.params;
-    console.log("id es" , id)
+    console.log("id es", id)
     if (id) {
       const data = await User.findOne({
         where: { id },
       });
-      if (data) { 
+      if (data) {
         await data.destroy();
         res.status(200).send({ message: "usuario borrado satisfactoriamente" });
       } else {
@@ -104,10 +104,42 @@ async function deleteUser(req, res, next) {
   }
 }
 
+async function searchUser(req, res, next) {
+  try {
+    let { username, email } = req.query;
+    if (username && email) {
+      const dataUsername = await User.findOne({
+        where: { username },
+      });
+      const dataEmail = await User.findOne({
+        where: { email },
+      });
+
+      if (dataUsername && !dataEmail) {
+        res.status(200).send({ message: "Username is in use" });
+      } else if (!dataUsername && dataEmail) {
+        res.status(200).send({ message: "Email is in use" });
+      } else if (dataUsername && dataEmail) {
+        res.send({ message: "Email and Username are in use" });
+      } else {
+        res.send({ message: "true" });
+      }
+      return res.status(200).send({ message: "true" });
+    }
+    if (!username || !email) {
+      res.send({ message: "false" });
+    }
+  } catch (error) {
+    // res.send({ message: "Error, try it again later " });
+  }
+}
 module.exports = {
   getUsers,
   getUserById,
   putUser,
   deleteUser,
+  searchUser
 };
+
+
 

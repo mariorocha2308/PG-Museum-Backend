@@ -19,7 +19,7 @@ let sequelize =
     ? new Sequelize({
         database: DB_NAME,
         dialect: "postgres",
-        host: DB_HOST,
+        host: DB_HOST, 
         port: 5432,
         username: DB_USER,
         password: DB_PASSWORD,
@@ -65,13 +65,21 @@ sequelize.models = Object.fromEntries(capsEntries);
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
 
-const { RefreshToken, User, Artwork, Type, Shopping_cart, Role, Review } = sequelize.models;
+const { RefreshToken, User, Artwork, Type, Shopping_cart, Role, Review, Rating } = sequelize.models;
 
 
 
 //User.hasMany(Shopping_cart, {as:"shopping_cart", foreignKey: 'user_id'});
 Shopping_cart.belongsTo(User, {as:"user"});
-Review.belongsTo(Artwork, {as:"artwork"});
+
+Artwork.hasMany(Review);
+Review.belongsTo(Artwork);
+
+Artwork.belongsToMany(Rating, {through: 'artwork_rating'});
+Rating.belongsToMany(Artwork, {through: 'artwork_rating'});
+Rating.belongsToMany(User, {through: 'user_rating'});
+User.belongsToMany(Rating, {through: 'user_rating'});
+
 
 Shopping_cart.belongsToMany(Artwork, { through: 'Shopping_cart_artwork' });
 Artwork.belongsToMany(Shopping_cart, { through: 'Shopping_cart_artwork' });
