@@ -1,0 +1,12 @@
+{
+    "secret": "9736104ljz000",
+    "emailFrom": "info@museum.com",
+    "smtpOptions": {
+        "host": "smtp.gmail.com",
+        "port": 465,
+        "auth": {
+            "user": "zerontecnologia1@gmail.com",
+            "pass": "tglbptedlcmvwwva"
+        }
+    }
+}
