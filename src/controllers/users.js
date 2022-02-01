@@ -133,13 +133,13 @@ async function searchUser(req, res, next) {
     // res.send({ message: "Error, try it again later " });
   }
 }
+
+
 module.exports = {
   getUsers,
   getUserById,
   putUser,
   deleteUser,
-  searchUser
+  searchUser,
 };
-
-
 

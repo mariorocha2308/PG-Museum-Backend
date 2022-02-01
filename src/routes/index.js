@@ -7,6 +7,7 @@ const shoppingCartRoutes = require('./shopping_cart');
 const galleryRoutes = require('./gallery');
 const reviewRoutes = require('./review');
 const ratingRoutes = require('./rating');
+const { getUsersRoles } = require('../controllers/roles');
 const { verifySignUp, authJwt } = require('../middleware');
 const {
   signup,
@@ -65,7 +66,7 @@ router.get(
 );
 
 router.post("/auth/refreshToken", refreshToken);
-router.use("/user", [authJwt.verifyToken], usersRoutes);
+router.use("/user", usersRoutes);
 
 //* RUTA ENCARGADA DE LAS OBRAS DE ARTE
 router.use('/artwork', artworkRoutes);
@@ -78,6 +79,7 @@ router.use('/review', reviewRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/shopping', shoppingCartRoutes)
 router.use('/rating', ratingRoutes);
+router.get('/roles', getUsersRoles);
 
 router.get('/', (req, res) => {
   res.status(200).send(' > > > > ||| . . . GO TO -/|\-/|\- HEROKU deploy . . . ||| > > >');
