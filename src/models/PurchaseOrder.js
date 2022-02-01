@@ -1,0 +1,30 @@
+const { DataTypes } = require('sequelize');
+
+module.exports = (sequelize) => {
+    sequelize.define('purchaseOrder', {
+        state: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        date: {
+            type: DataTypes.ARRAY(DataTypes.STRING),
+            allowNull: false,
+        },
+        credit_card: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        total: {
+            type: DataTypes.DECIMAL(10, 2),
+            allowNull: false,
+        },
+        userId: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        artworksId: {
+            type: DataTypes.ARRAY(DataTypes.INTEGER),
+            allowNull: false,
+        },
+        });
+};

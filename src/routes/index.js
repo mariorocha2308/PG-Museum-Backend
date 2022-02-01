@@ -7,6 +7,7 @@ const shoppingCartRoutes = require('./shopping_cart');
 const galleryRoutes = require('./gallery');
 const reviewRoutes = require('./review');
 const ratingRoutes = require('./rating');
+const purchaseOrderRoutes = require('./purchase_order');
 const { getUsersRoles } = require('../controllers/roles');
 const { verifySignUp, authJwt } = require('../middleware');
 const {
@@ -79,6 +80,7 @@ router.use('/review', reviewRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/shopping', shoppingCartRoutes)
 router.use('/rating', ratingRoutes);
+router.use('/order', purchaseOrderRoutes);
 router.get('/roles', getUsersRoles);
 
 router.get('/', (req, res) => {
