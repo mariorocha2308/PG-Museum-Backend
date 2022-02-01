@@ -11,13 +11,13 @@ async function getUsersRoles(req, res, next) {
             );
             let role = "";	
             if (userRole.roleId === 1) {
-                role = "ROLE_ADMIN";
+                role = "ROLE_USER";
             }
             if (userRole.roleId === 2) {
                 role = "ROLE_BLOCKED";
             }
             if (userRole.roleId === 3) {
-                role = "ROLE_USER";
+                role = "ROLE_ADMIN";
             }
           return {
             id: user.id,
