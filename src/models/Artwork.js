@@ -44,9 +44,6 @@ module.exports = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
-        creators_id: {
-            type: DataTypes.INTEGER,
-        },
         creators_description: {
             type: DataTypes.STRING,
         },
