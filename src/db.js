@@ -8,7 +8,6 @@ const {
 
 
 // const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/gallery`, {
-
 //   logging: false, // set to console.log to see the raw SQL queries
 //   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 // });
@@ -65,7 +64,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
 
-const { RefreshToken, User, Artwork, Type, Shopping_cart, Role, Review, Rating, PurchaseOrder } = sequelize.models;
+const { RefreshToken, User, Artwork, Type, Shopping_cart, Role, Review, Rating, PurchaseOrder, Process_payment } = sequelize.models;
 
 
 
@@ -77,6 +76,9 @@ PurchaseOrder.belongsToMany(User, {through: 'user_purchase_order'})
 
 Artwork.hasMany(Review);
 Review.belongsTo(Artwork);
+
+User.hasMany(Process_payment);
+Process_payment.belongsTo(User, {through: 'user_process_payment'});
 
 Artwork.belongsToMany(Rating, {through: 'artwork_rating'});
 Rating.belongsToMany(Artwork, {through: 'artwork_rating'});

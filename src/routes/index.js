@@ -8,6 +8,7 @@ const galleryRoutes = require('./gallery');
 const reviewRoutes = require('./review');
 const ratingRoutes = require('./rating');
 const purchaseOrderRoutes = require('./purchase_order');
+const processPaymentRoutes = require('./process_payment');
 const { getUsersRoles } = require('../controllers/roles');
 const { verifySignUp, authJwt } = require('../middleware');
 const {
@@ -81,7 +82,10 @@ router.use('/gallery', galleryRoutes);
 router.use('/shopping', shoppingCartRoutes)
 router.use('/rating', ratingRoutes);
 router.use('/order', purchaseOrderRoutes);
+router.use('/process-payment', processPaymentRoutes);
+
 router.get('/roles', getUsersRoles);
+
 
 router.get('/', (req, res) => {
   res.status(200).send(' > > > > ||| . . . GO TO -/|\-/|\- HEROKU deploy . . . ||| > > >');
