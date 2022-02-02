@@ -19,7 +19,7 @@ async function postPurchaseOrder(req, res, next) {
     try {
         const { userId } = req.body;
         const purchaseOrderData = await PurchaseOrder.create({
-            state: req.body.state, // "loaded"  o "cancelled"
+            state: req.body.state, // "in process"  "created"  "loaded"  o "cancelled"
             date: req.body.date,
             total: req.body.total,
             credit_card: req.body.credit_card,

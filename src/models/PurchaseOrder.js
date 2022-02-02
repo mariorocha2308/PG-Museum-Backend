@@ -12,11 +12,11 @@ module.exports = (sequelize) => {
         },
         credit_card: {
             type: DataTypes.STRING,
-            allowNull: false,
+            
         },
         total: {
             type: DataTypes.DECIMAL(10, 2),
-            allowNull: false,
+          
         },
         userId: {
             type: DataTypes.INTEGER,

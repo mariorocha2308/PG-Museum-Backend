@@ -2,9 +2,11 @@ const { Review } = require('../db');
 
 async function postReview(req, res, next) {
     try {
-        const { description, artworkId } = req.body;
+        const { description, artworkId, rating, userId } = req.body;
         const reviewData = await Review.create({
             description,
+            rating,
+            userId,
             artworkId
         })
         return res.json(reviewData);
