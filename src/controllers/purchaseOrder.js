@@ -7,7 +7,6 @@ async function getAllpurchaseOrder(req, res, next) {
                 {
                     model: User,
                 }
-            
         });
         return res.json(data);
     } catch (err) {
@@ -50,7 +49,6 @@ async function getIdPurchaseOrder(req, res, next) {
         next(err);
     }
 }
-
 
 async function putPurchaseOrder(req, res, next) {
     const id = req.params.id;
