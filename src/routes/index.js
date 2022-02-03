@@ -82,7 +82,7 @@ router.use('/gallery', galleryRoutes);
 router.use('/shopping', shoppingCartRoutes)
 router.use('/rating', ratingRoutes);
 router.use('/order', purchaseOrderRoutes);
-router.use('/process-payment', processPaymentRoutes);
+router.use('/payment', processPaymentRoutes);
 
 router.get('/roles', getUsersRoles);
 
