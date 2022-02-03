@@ -2,9 +2,9 @@ const { Process_payment } = require('../db');
 const mercadopago = require("mercadopago");
 
 async function postProcessPayment(req, res, next) {
-    mercadopago.configurations.setAccessToken(process.env.ACCESS_TOKEN_MP);
-    // const payment_data = Process_payment.create({
-    const payment_data = {
+    mercadopago.configurations.setAccessToken("TEST-a444b3ce-cbb6-4f66-b2d9-4a850880f115");
+    const payment_data = await Process_payment.create({
+    // const payment_data = {
         transaction_amount: req.body.transaction_amount,
         token: req.body.token,
         description: req.body.description,
@@ -19,7 +19,7 @@ async function postProcessPayment(req, res, next) {
             },
         },
     }
-    // )
+    )
     mercadopago.payment
         .save(payment_data)
         .then((response) => {

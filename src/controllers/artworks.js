@@ -13,12 +13,12 @@ async function getApiToDb(req, res, next) {
                 { model: Rating }
             ],
         });
-        console.log("length es____", foundArtworkDb.length);
+        // console.log("length es____", foundArtworkDb.length);
         if (foundArtworkDb.length !== 0) {
-            console.log("entramos a las obras de arte por data base")
+            // console.log("entramos a las obras de arte por data base")
             return res.json(foundArtworkDb);
         } else {
-            console.log("entramos a las obras de arte por primera vez al levantar el server por la API data")
+            // console.log("entramos a las obras de arte por primera vez al levantar el server por la API data")
             let apiArtwork = dataApi // await axios.get(API_URL);
             
             // apiArtwork = apiArtwork.data;
@@ -36,6 +36,8 @@ async function getApiToDb(req, res, next) {
                 let randomPrice = allPrices[Math.floor(Math.random() * allPrices.length)];
                 let randomRating = allRating[Math.floor(Math.random() * allRating.length)];
 
+                var creators = art.creators.length !== 0 ? art.creators[0].description : "anonymous";
+
                 if (art.images !== null) {
                     var image = art.images.web.url;
                 } else {
@@ -50,8 +52,6 @@ async function getApiToDb(req, res, next) {
                     // str = str.substring(0, 1208) + '...'; // limita la cantidad de texto en la description
                 }
 
-                var creators = art.creators.length === 0 ? "anonymous" : art.creators[0].description;
-                var creators_id = art.creators.length === 0 ? 5040 : art.creators[0].id;
 
                 return {
                     id: art.id,
@@ -66,7 +66,6 @@ async function getApiToDb(req, res, next) {
                     collection: art.collection,
                     description: str,
                     type: art.type,
-                    creators_id: creators_id,
                     creators_description: creators,
                     stock: true,
                 }
@@ -90,7 +89,6 @@ async function getApiToDb(req, res, next) {
                         culture: art.culture,
                         technique: art.technique,
                         collection: art.collection,
-                        creators_id: art.creators_id,
                         creators_description: art.creators_description,
                         stock: art.stock,
                     },
@@ -118,7 +116,7 @@ async function getApiToDb(req, res, next) {
             return res.json(results);
         }
     } catch (error) {
-        return 'no esta entrando en el if de la db why???? ' + error;
+        return 'sale a catch por no contener una función asíncrona previo a db de artwork' + error;
     }
 };
 
@@ -147,7 +145,7 @@ async function getByName(req, res, next) {
 
 
 async function postArtwork(req, res, next) {
-    const { title, images, price, description, creation_date, current_location, culture, technique, collection, creators_description, creators_id, type } = req.body;
+    const { title, images, price, description, creation_date, current_location, culture, technique, collection, creators_description, type } = req.body;
     try {
         const newArtwork = await Artwork.create({
             title,
@@ -160,7 +158,6 @@ async function postArtwork(req, res, next) {
             technique,
             collection,
             creators_description,
-            creators_id,
             stock: true
         });
         await newArtwork.addTypes(type);
