@@ -2,9 +2,9 @@ const { Process_payment } = require('../db');
 const mercadopago = require("mercadopago");
 
 async function postProcessPayment(req, res, next) {
-    mercadopago.configurations.setAccessToken("TEST-a444b3ce-cbb6-4f66-b2d9-4a850880f115");
-    const payment_data = await Process_payment.create({
-    // const payment_data = {
+    mercadopago.configurations.setAccessToken("TEST-919204976846897-020212-10319e6bacd88c552de7db0855b041c4-43204632");
+    // const payment_data = await Process_payment.create({
+    const payment_data = {
         transaction_amount: req.body.transaction_amount,
         token: req.body.token,
         description: req.body.description,
@@ -19,7 +19,7 @@ async function postProcessPayment(req, res, next) {
             },
         },
     }
-    )
+    // )
     mercadopago.payment
         .save(payment_data)
         .then((response) => {
@@ -44,27 +44,8 @@ async function getAllProcessPayment(req, res, next) {
 }
 
 
-
-
 module.exports = {
     getAllProcessPayment,
     postProcessPayment
 }
 
-
-// post sample
-// {
-//     "transaction_amount": 2,
-//     "token": "req.body.token",
-//     "description": "req.body.description",
-//     "installments": 2,
-//     "payment_method_id": 2,
-//     "issuer_id": 2,
-//     "payer": {
-//         "email": "req.body.payer.email",
-//         "identification": {
-//             "type": "req.body.payer.docType",
-//             "number": 2
-//         }
-//     }
-// }
