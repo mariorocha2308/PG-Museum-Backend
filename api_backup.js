@@ -1,6 +1,4 @@
 
-
-
 const dataApi = {data:[
     {
       "id": 94979,
@@ -40,15 +38,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 90.5 x 78 x 6.5 cm (35 5/8 x 30 11/16 x 2 9/16 in.); Unframed: 76.2 x 64.8 cm (30 x 25 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.905,
-          "width": 0.78,
-          "depth": 0.065
-        },
-        "unframed": {
           "height": 0.762,
           "width": 0.648
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -59,54 +50,6 @@ const dataApi = {data:[
       ],
       "exhibitions": {
         "current": [
-          {
-            "id": 317001,
-            "title": "Inaugural Exhibition",
-            "description": "<i>Inaugural Exhibition</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (co-organizer) (June 6-September 20, 1916).",
-            "opening_date": "1916-06-06T05:00:00"
-          },
-          {
-            "id": 312517,
-            "title": "The Twentieth Anniversary Exhibition: The Official Art Exhibit of the Great Lakes Exposition",
-            "description": "<i>The Twentieth Anniversary Exhibition: The Official Art Exhibit of the Great Lakes Exposition</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (June 26-October 12, 1936).",
-            "opening_date": "1936-06-26T04:00:00"
-          },
-          {
-            "id": 312341,
-            "title": "The Silver Jubilee Exhibition",
-            "description": "<i>The Silver Jubilee Exhibition</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (June 23-September 28, 1941).",
-            "opening_date": "1941-06-23T04:00:00"
-          },
-          {
-            "id": 304248,
-            "title": "Style, Truth and the Portrait",
-            "description": "<i>Style, Truth and the Portrait</i>. The Cleveland Museum of Art (October 2-November 19, 1963).",
-            "opening_date": "1963-10-02T04:00:00"
-          },
-          {
-            "id": 444647,
-            "title": "The Face of Liberty",
-            "description": "<i>The Face of Liberty</i>. Amon Carter Museum, Fort Worth, TX (organizer) (December 23, 1975-February 8, 1976).",
-            "opening_date": "1975-12-23T05:00:00"
-          },
-          {
-            "id": 417433,
-            "title": "John Singleton Copley's America",
-            "description": "<i>John Singleton Copley's America</i>. Museum of Fine Arts, Boston (June 7-August 27, 1995); The Metropolitan Museum of Art (organizer) (September 26, 1995-January 7, 1996); Museum of Fine Arts, Houston (February 4-April 28, 1996).",
-            "opening_date": "1995-06-07T04:00:00"
-          },
-          {
-            "id": 222076,
-            "title": "Nathaniel Hurd",
-            "description": "<i>Nathaniel Hurd</i>. Memorial Art Gallery of the University of Rochester, NY (November 22, 1999-April 10, 2000).",
-            "opening_date": "1999-11-22T00:00:00"
-          },
-          {
-            "id": 180609,
-            "title": "CMA @ Oberlin - American Portraits",
-            "description": "<i>CMA @ Oberlin - American Portraits</i>. Allen Memorial Art Museum, Oberlin, OH (August 29-December 17, 2006).",
-            "opening_date": "2006-08-29T00:00:00"
-          }
         ],
         "legacy": [
           "Cleveland, Cleveland Museum of Art, The Inaugural Exhibition (6 June-20 September, 1916); cat. p. 255.<br><br>Boston, Museum of Fine Arts, Boston, One Hundred Colonial Portraits (19 June-21 September 1930), cat. no. 50.<br><br>Cleveland, Cleveland Museum of Art, Catalogue of the Twentieth Anniversary Exhibition of the Cleveland Museum of Art: The Official Art Exhibit of the Great Lakes Exposition (26 June-4 October, 1936), illus. plate II, cat. no. 23, pp. 21-22.<br><br>New York, Metropolitan Museum of Art, An Exhibition of Paintings by John Singleton Copley: In Commemoration of the Two-Hundredth Anniversary of His Birth (22 December, 1936-14 February, 1937), illus. 16. <br><br>Baltimore, Baltimore Museum of Art, Two Hundred Years of American Painting, (15 January-28 February, 1938), no. 2.<br><br>New Haven, Yale University Gallery of Fine Arts, Masterpieces of New England Silver 1650-1800, (18 June-10 September, 1939), ill. no. 224, p. 94.<br><br>Flint, Mich., Flint Institute of Arts, Art Marches On: The Opening and Dedicating Exhibition of the New Flint Institute of Arts (14 November-31 December, 1941), illus no. 53, p. 30.<br><br>Oberlin, Ohio, The Dudley P. Allen Memorial Art Museum, The Arts in the Americas in the Eighteenth Century (1946), cat. no. 1 (see Bulletin of the Allen Memorial Art Museum, Oberlin College, vol. III, no. 3 (May, 1946).<br><br>Dallas, The Dallas Museum of Fine Arts, Survey of American Painting from 1700 to the Present (5 October - 3 November 1946); cat. 200 Years of American Painting.<br><br>Denver, The Denver Art Museum, American Heritage: An Exhibitions of Paintings and Crafts 1770-1790 (7 March-11 April 1948), ill. p. 9.<br><br>Denver, The Denver Art Museum, Portraiture Through the Ages (9 January - 15 February 1950).<br><br>Milwaukee, Milwaukee Art Institute, Silver and American Tradition (13 February - 19 March 1953).<br><br>Houston, Museum of Fine Arts, Houston, George Washington's World (15 January - 14 February 1954), cat. no. 5. <br><br>Boston, Museum of Fine Arts, Boston, Colonial Silversmiths, Masters and Apprentices (13 November - 30 December 1956).<br><br>Jewett Art Center, Wellesley College, Massachusetts, Four Boston Masters (10 April-11 May, 1959), cat. no. 8, repr. p. 25; traveled to Boston, Museum of Fine Arts (19 May - 26 June 1959).<br><br>Cleveland, The Cleveland Museum of Art, Style, Truth and the Portrait (1 October -10 November, 1963), ill. cat. no. 29.<br><br>New York, The Gallery at The Better Living Center, New York World's Fair, Four Centuries of American Masterpieces (22 May-18 October 1964), p. 18, illus. p. 18; (arranged by the Skowhegan School of Painting and Sculpture).<br><br>Washington, DC, National Gallery of Art, John Singleton Copley, 1738-1815 (18 September - 31 October 1965), pp. 45-9, illus. p. 47; traveled to New York, Metropolitan Museum of Art (20 November 1965 - 2 January 1966); traveled to Boston, Museum of Fine Arts (22 January - 6 February 1966).<br><br>Fort Worth, Amon Carter Museum of Western Art, The Face of Liberty: Founders of the United States (23 December 1975 - 8 February 1976), illus. colorplate 16.<br><br>Cleveland, The Cleveland Museum of Art, Silver in American Life (24 June - 16 August 1981); exhibited in gallery but not in catalogue.<br><br>Boston, Museum of Fine Arts, John Singleton Copley in America (7 June - 27 August 1995), traveled to New York, Metropolitan Museum of Art (26 September 1995 - 7 January 1996), traveled to Houston, Museum of Fine Arts (4 February - 28 April 1996), did not travel to Milwaukee, Milwaukee Art Museum; cat. no. 21, p. 57, 93, 119, 208-11, 248, 300, 312.<br><br>Rochester, New York, Memorial Art Gallery of the University of Rochester, ABOUT FACE: Copley's Portrait of Nathaniel Hurd, Colonial Silversmith and Engraver, (1 November 1999-1 March 2000), see Porticus journal."
@@ -203,476 +146,6 @@ const dataApi = {data:[
         ]
       },
       "citations": [
-        {
-          "citation": "Perkins, Augustus Thorndike. <em>A Sketch of the Life and a List of Some of the Works of John Singleton Copley</em>. Boston: Priv. Print, 1873.",
-          "page_number": "Mentioned: p. 17, 75-6",
-          "url": null
-        },
-        {
-          "citation": "Bayley, Frank W. <em>The Life and Works of John Singleton Copley: Founded on the Work of Augustus Thorndike Perkins</em>. Boston, MA: Taylor Press, 1915.",
-          "page_number": "Mentioned: p. 151-152",
-          "url": null
-        },
-        {
-          "citation": "W. H. D. \"The Fine Arts: Fine Portrait by Copley.\" <em>The Boston Transcript, </em>October, 1915.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "<em>The American Art News. </em>14:23 (March 11, 1916): 1-10.",
-          "page_number": "Reproduced: p. 5",
-          "url": null
-        },
-        {
-          "citation": "\"Clevel'd Gets Early Am'ns.\" <em>The American Art News. </em>14:24 (March 18, 1916): 1-8.",
-          "page_number": "Mentioned: p. 1",
-          "url": null
-        },
-        {
-          "citation": "\"The Inauguration.\" <em>The Bulletin of the Cleveland Museum of Art</em>. 3:2 (July, 1916): 1-24.",
-          "page_number": "Reproduced: opposite p. 1",
-          "url": null
-        },
-        {
-          "citation": "Bell, Hamilton. \"Early American Portraits at the Cleveland Museum of Art.\" <em>The American Magazine of Art</em>. 7:12 (October, 1916).",
-          "page_number": "Mentioned: p. 484-5; Reproduced: p. 485",
-          "url": null
-        },
-        {
-          "citation": "Cleveland Museum of Art. <em>An Appreciation of Copley's \"Nathaniel Hurd\": John Huntington Collection</em>. Cleveland, OH: Cleveland Museum of Art, 1918.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "\"Special Exhibition Cabinet.\" <em>The Bulletin of the Cleveland Museum of Art</em>. 5:1. (January 1918).",
-          "page_number": "Mentioned: p. 3",
-          "url": "www.jstor.org/stable/25136158"
-        },
-        {
-          "citation": "Dunlap, William. <em>A History of the Rise and Progress of the Arts of Design in the United States</em>. 1. Boston: C.E. Goodspeed &amp; Co, 1918.",
-          "page_number": "Mentioned: p. 172-4; Reproduced: opposite p. 173",
-          "url": null
-        },
-        {
-          "citation": "\"Report of the Museum's Second Year.\" <em>The Bulletin of the Cleveland Museum of Art</em> 5, no. 6/7 (1918): 69-79.",
-          "page_number": "Mentioned: p. 71",
-          "url": "www.jstor.org/stable/25136208"
-        },
-        {
-          "citation": "Clearwater, Alphonso Trumpbour, and C. Louise Avery. <em>American Silver of the 17th and 18th Centuries: A Study Based on the Clearwater Collection. </em>New York: Metropolitan Museum of Art, 1920.",
-          "page_number": "Reproduced: fig. 101",
-          "url": null
-        },
-        {
-          "citation": "\"Early Portrait Study by Copley.\" <em>Art News. </em>22:19 (February 16, 1923).",
-          "page_number": "Reproduced: p. 9",
-          "url": null
-        },
-        {
-          "citation": "L. P. \"Portrait of Nathaniel Hurd by Copley.\" <em>The Bulletin of the Cleveland Museum of Art</em>. 10:3 (March 1923).",
-          "page_number": "Mentioned: p. 39-40",
-          "url": null
-        },
-        {
-          "citation": "\"When Copley Portrayed an Early Craftsman.\" <em>Art News.</em> (June 9, 1923).",
-          "page_number": "Reproduced: p. 4",
-          "url": null
-        },
-        {
-          "citation": "National Collection of Fine Arts (U.S.), Washington Loan Exhibition Committee. <em>Exhibition of Early American Paintings, Miniatures and Silver</em>. Washington, D.C.: National Gallery of Art, 1925.",
-          "page_number": "Reproduced: p. 80",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art</em>. Cleveland, OH: The Cleveland Museum of Art, 1925.",
-          "page_number": "Mentioned: p. 7-8; Reproduced: p. 8",
-          "url": "https://archive.org/details/CMAHandbook_80839/page/n10"
-        },
-        {
-          "citation": "Dow, George Francis. <em>The Arts &amp; Crafts in New England, 1704-1775; Gleanings from Boston Newspapers Relating to Painting, Engraving, Silversmiths, Pewterers, Clockmakers, Furniture, Pottery, Old Houses, Costume, Trades and Occupations, &amp; C...</em> Topsfield, MA: Wayside Press, 1927.",
-          "page_number": "Mentioned: p. 8; Reproduced: frontispiece",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art</em>. Cleveland, OH: The Cleveland Museum of Art, 1928.",
-          "page_number": "Reproduced: p. 8",
-          "url": "https://archive.org/details/CMAHandbook1928/page/n12"
-        },
-        {
-          "citation": "<em>Handbook of the Cleveland Museum of Art. </em>Cleveland: Cleveland Museum of Art, 1928.",
-          "page_number": "Reproduced: p. 8",
-          "url": "https://archive.org/details/CMAHandbook1928#page=12"
-        },
-        {
-          "citation": "Bayley, Frank W. <em>Five Colonial Artists of New England: Joseph Badger, Joseph Blackburn, John Singleton Copley; Robert Feke, John Smibert</em>. Boston, MA: Privately Printed, 1929.",
-          "page_number": "Reproduced: fig. 229",
-          "url": null
-        },
-        {
-          "citation": "Bolton, Theodore and Harry Lorin Binsse. \"John Singleton Copley.\" <em>The Antiquarian. </em>15:6 (December, 1930).",
-          "page_number": "Reproduced: p. 80-81",
-          "url": null
-        },
-        {
-          "citation": "Stark, Harold. <em>Art in America from 1600 to 1865; An Illustrated Guide for a National Radio Broadcast from February 3 to May 19, 1934</em>. Chicago, IL: University of Chicago Press, 1934.",
-          "page_number": "Reproduced: p. 19",
-          "url": null
-        },
-        {
-          "citation": "Cahill, Holger, and Alfred H. Barr, Jr., eds. <em>Art in America: A Complete Survey</em>. New York, NY: Reynal &amp; Hitchcock, 1935.",
-          "page_number": "Mentioned: p. 17; Reproduced: p. 18",
-          "url": null
-        },
-        {
-          "citation": "Milliken, William. \"Special Number for the 20th Anniversary Exhibition of the Cleveland Museum of Art: Official Art Exhibit of the Great Lakes Exposition.\" <em>The Art News.</em> (June 13, 1936).",
-          "page_number": "Reproduced: p. 14",
-          "url": null
-        },
-        {
-          "citation": "Burroughs, Louise. \"John Singleton Copley.\" <em>Bulletin of the Metropolitan Museum of Art.</em> 31:12 (December 1936).",
-          "page_number": "Mentioned: p. 254",
-          "url": null
-        },
-        {
-          "citation": "Frankfurter, Alfred M. \"J. S. Copley, American Master.\" <em>Art News.</em> 35:13 (December 26, 1936).",
-          "page_number": "Reproduced: p. 12",
-          "url": null
-        },
-        {
-          "citation": "Jewell, Edward Alden. \"Copley: Metropolitan Opens Bicentennial Show.\" <em>The New York Times, </em>December 27, 1936.",
-          "page_number": "Mentioned: p. 9",
-          "url": null
-        },
-        {
-          "citation": "Parker, Barbara Neville, and Anne Bolling Wheeler. <em>John Singleton Copley; American Portraits in Oil, Pastel, and Miniature</em>. Boston, MA: Museum of Fine Arts, 1938.",
-          "page_number": "Reproduced: p. 118-9, pl. 61A",
-          "url": null
-        },
-        {
-          "citation": "French, Hollis. <em>Jacob Hurd and His Sons Nathaniel &amp; Benjamin: Silversmiths 1702-1781. </em>Cambridge, MA: Riverside Press for the Walpole Society, 1939.",
-          "page_number": "Reproduced: frontispiece; Mentioned: pp. 138-40",
-          "url": null
-        },
-        {
-          "citation": "Hagen, Oskar. <em>The Birth of the American Tradition in Art</em>. New York: Charles Scribner's Sons, 1940.",
-          "page_number": "Reproduced: p. 89; Mentioned: pp. 102-105",
-          "url": null
-        },
-        {
-          "citation": "Foote, Helen S. \"A Collection of Early American Silver Gift of Hollis French.\" <em>The</em> <em>Bulletin of the Cleveland Museum of Art.</em> 27:9 (November, 1940).",
-          "page_number": "Mentioned: p. 135",
-          "url": null
-        },
-        {
-          "citation": "Flint Institute of Arts. <em>Art Marches on!: The Opening and Dedicating Exhibition of the New Flint Institute of Arts</em>. Flint, MI: The Institute, 1941.",
-          "page_number": "Reproduced and Mentioned: p. 30, fig. 50",
-          "url": null
-        },
-        {
-          "citation": "\"Cleveland's First 25 Years.\" <em>ARTnews. </em>40:11 (September, 1941).",
-          "page_number": "Mentioned: p. 13, 25; Reproduced: p. 13",
-          "url": null
-        },
-        {
-          "citation": "Walker, John, and Macgill James. <em>Great American Paintings from Smibert to Bellows, 1729-1924</em>. London: Oxford University Press, 1943.",
-          "page_number": "Reproduced: no. 10",
-          "url": null
-        },
-        {
-          "citation": "\"Cleveland Museum.\" <em>Life</em> (September 20, 1943).",
-          "page_number": "Reproduced: p. 68",
-          "url": null
-        },
-        {
-          "citation": "King, Winnifred. \"Their Hands.\" <em>The Christian Science Monitor. </em>November 20, 1943.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Adams, James Truslow. <em>Album of American History</em>. volume 1. New York, NY: Charles Scribner's Sons, 1944.",
-          "page_number": "Reproduced: p. 345",
-          "url": null
-        },
-        {
-          "citation": "<em>Paintings in the Cleveland Museum of Art.</em> [Cleveland]: The Cleveland Museum of Art, 1945.",
-          "page_number": "Reproduced: p. 12",
-          "url": "https://archive.org/details/CMAPaintings1945/page/n20"
-        },
-        {
-          "citation": "\"The Arts in America in the Eighteenth Century.\" <em>Bulletin of the Allen Memorial Art Museum, Oberlin College</em>. 3:3 (May, 1946).",
-          "page_number": "Mentioned: p. 67, 90, 99; Reproduced: p. 66",
-          "url": null
-        },
-        {
-          "citation": "Phillips, John Marshall. <em>American Silver</em>. New York, NY: Chanticleer Press, 1949.",
-          "page_number": "Mentioned: p. 82-6; Reproduced: p. 83",
-          "url": null
-        },
-        {
-          "citation": "Barker, Virgil. <em>American Painting: History and Interpretation</em>. New York, NY: The Macmillan Company, 1950.",
-          "page_number": "Mentioned: p. 144, 147-8; Reproduced: p. 145",
-          "url": null
-        },
-        {
-          "citation": "\"A bird's-eye view of early American painting.\" <em>Antiques.</em> 62 (November 1952).",
-          "page_number": "Reproduced: p. 402",
-          "url": null
-        },
-        {
-          "citation": "Milliken, William Mathewson. <em>The Cleveland Museum of Art</em>. New York: H.N. Abrams, 1958.",
-          "page_number": "Mentioned: p. 60",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>The Cleveland Museum of Art Handbook.</em> Cleveland, OH: The Cleveland Museum of Art, 1958.",
-          "page_number": "Mentioned and Reproduced: cat. no. 529",
-          "url": "https://archive.org/details/CMAHandbook1958/page/n96"
-        },
-        {
-          "citation": "\"Portraits of American Craftsmen.\" <em>Antiques. </em>76. (October 1959).",
-          "page_number": "Reproduced: p. 321",
-          "url": null
-        },
-        {
-          "citation": "Larkin, Oliver W. <em>Art and Life in America</em>. New York, NY: Holt, Rinehart and Winston, 1960.",
-          "page_number": "Reproduced: pl. 1",
-          "url": null
-        },
-        {
-          "citation": "<em>Kindlers Malerei Lexicon</em>. volume 1. Zurich, Switzerland: 1964.",
-          "page_number": "Reproduced: p. 776",
-          "url": null
-        },
-        {
-          "citation": "Museum of Fine Arts, Saint Petersburg. <em>Inaugural Exhibition, February 7 Through March 7, 1965</em>. Saint Petersburg, FL: 1965.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966</em>. Cleveland, OH: The Cleveland Museum of Art, 1966.",
-          "page_number": "Reproduced: p. 161",
-          "url": "https://archive.org/details/CMAHandbook1966/page/n184"
-        },
-        {
-          "citation": "Prown, Jules David. <em>John Singleton Copley: In America 1738-1774</em>. Cambridge, MA: Harvard University Press, 1966.",
-          "page_number": "Mentioned: p. 52-55; Reproduced: no. 177",
-          "url": null
-        },
-        {
-          "citation": "Wright, Louis B., George B. Tatum, John W. McCoubrey, and Robert C. Smith. <em>The Arts In America: The Colonial Period</em>. New York, NY: Charles Scribner's Sons, 1966.",
-          "page_number": "Reproduced: p. 204",
-          "url": null
-        },
-        {
-          "citation": "Wilson, Patricia Boyd. <em>The Christian Science Monitor.</em> January 19, 1966.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Myers, Bernard S. <em>Art and Civilization</em>. New York: McGraw-Hill Book Company, 1967.",
-          "page_number": "Mentioned: p. 319-320; Reproduced: p. 319",
-          "url": null
-        },
-        {
-          "citation": "Cirker, Hayward, and Blanche Cirker. <em>Dictionary of American Portraits: 4045 Pictures of Important Americans from Earliest Times to the Beginning of the Twentieth Century</em>. New York, NY: Dover Publications, Inc., 1967",
-          "page_number": "Reproduced: p. 322",
-          "url": null
-        },
-        {
-          "citation": "McLanathan, Richard B. K. <em>The American Tradition in the Arts</em>. New York: Harcourt, Brace &amp; World, 1968.",
-          "page_number": "Mentioned: p. 91-2",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
-          "page_number": "Reproduced: p. 161",
-          "url": "https://archive.org/details/CMAHandbook1969/page/n184"
-        },
-        {
-          "citation": "Plate, Robert. <em>John Singleton Copley: America's First Great Artist. </em>New York, NY: David McKay Co, 1969.",
-          "page_number": "Mentioned: p. 27, 48",
-          "url": null
-        },
-        {
-          "citation": "Novak, Barbara. <em>American Painting of the Nineteenth Century: Realism, Idealism, and the American Experience</em>. New York, NY: Praeger Publishers, 1969.",
-          "page_number": "Mentioned: p. 24-5; Reproduced: p. 24",
-          "url": null
-        },
-        {
-          "citation": "Glubok, Shirley, and Gerard Nook. The Art of Colonial America. New York, NY: The Macmillan Company, 1970.",
-          "page_number": "Reproduced: p. 25",
-          "url": null
-        },
-        {
-          "citation": "Mooz, Ralph Peter. \"The Art of Robert Feke.\" Ph.D. dissertation, University of Pennsylvania, 1970.",
-          "page_number": "Mentioned: p. 177",
-          "url": null
-        },
-        {
-          "citation": "Lee, Sherman E. Introduction to <em>The Cleveland Museum of Art</em>. Hannover: Knorr &amp; Hirth, 1970.",
-          "page_number": "Mentioned: p. 64; Reproduced: no. 29",
-          "url": null
-        },
-        {
-          "citation": "Neumeyer, Alfred. \"Nordamerikanische Kunst.\" <em>Die Kunst des 18</em>. <em>Jahrhunderts</em>. ed. Harald Keller. Berlin: Propylaen Verlag, 1971.",
-          "page_number": "Reproduced: p. 431, pl. 68",
-          "url": null
-        },
-        {
-          "citation": "Fales, Martha Gandy. <em>Early American Silver</em>. New York: E.P. Dutton &amp; Co, 1973.",
-          "page_number": "Mentioned: p. 94, 239, 319",
-          "url": null
-        },
-        {
-          "citation": "Adler, Mortimer Jerome, ed. <em>The Revolutionary Years: Britannica's Book of the American Revolution</em>. Chicago, IL: Encyclopedia Britannica, Inc., 1976.",
-          "page_number": "Reproduced: p. 245",
-          "url": null
-        },
-        {
-          "citation": "Wilmerding, John. <em>American Art</em>. Harmondsworth, England: Penguin Books, 1976.",
-          "page_number": "Mentioned: p. 38",
-          "url": null
-        },
-        {
-          "citation": "Montgomery, Charles F., and Patricia E. Kane. <em>American Art, 1750-1800: Towards Independence</em>. Boston, MA: Published for Yale University Art Gallery, New Haven, and the Victoria and Albert Museum, London, by the New York Graphic Society, 1976.",
-          "page_number": "Reproduced: p. 132",
-          "url": null
-        },
-        {
-          "citation": "\"American Image.\" <em>Plain Dealer</em>. Section 5 - 8. (January 18, 1976).",
-          "page_number": "Mentioned and Reproduced: Section 5 - 8",
-          "url": null
-        },
-        {
-          "citation": "Brown, Milton W. <em>American Art to 1900: Painting, Sculpture, Architecture</em>. New York: H.N. Abrams, 1977.",
-          "page_number": "Mentioned: p. 101-2; Reproduced: no. 164, p. 102",
-          "url": null
-        },
-        {
-          "citation": "Johnson, Mark M. \"Portrait Painting - An Image of Man.\" <em>Arts and Activities. </em>82 (September 1977).",
-          "page_number": "Mentioned: p. 34; Reproduced: p. 36",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
-          "page_number": "Reproduced: p. 198",
-          "url": "https://archive.org/details/CMAHandbook1978/page/n218"
-        },
-        {
-          "citation": "Ward, Barbara McLean, and Gerald W. R. Ward, eds. <em>Silver in American Life: Selections from the Mabel Brady Garvan and Other Collections at Yale University.</em> New York: American Federation of Arts, 1979.",
-          "page_number": "Mentioned and Reproduced: p. 76",
-          "url": null
-        },
-        {
-          "citation": "Boros, Ethel. \"Early American Silver.\" <em>Plain Dealer.</em> (September 22, 1979).",
-          "page_number": "Mentioned: p. 34-5; Reproduced: p. 34",
-          "url": null
-        },
-        {
-          "citation": "Emlen, Robert P. \"Wedding Silver for the Browns: A Rhode Island Family Patronizes a Boston Goldsmith.\" <em>The American Art Journal</em>. 56:2 (Spring 1984).",
-          "page_number": "Reproduced: p. 8",
-          "url": null
-        },
-        {
-          "citation": "Janson, H. W. <em>History of Art</em>. Third edition. New York, NY: Prentice Hall &amp; Harry Abrams, 1986.",
-          "page_number": "Mentioned: p. 20; Reproduced: p. 21",
-          "url": null
-        },
-        {
-          "citation": "Buchanan, Penelope D. \"John Singleton Copley: Portrait of Nathaniel Hurd.\" <em>Art Education</em>. 40:1 (January 1987).",
-          "page_number": "Mentioned: p. 27-8; Reproduced: p. 28",
-          "url": null
-        },
-        {
-          "citation": "<em>Handbook of The Cleveland Museum of Art</em>. Cleveland, OH: The Cleveland Museum of Art, 1991.",
-          "page_number": "Reproduced: p. 114",
-          "url": null
-        },
-        {
-          "citation": "Turner, Evan H., ed. <em>Object Lessons: Cleveland Creates an Art Museum</em>. Cleveland, OH: Cleveland Museum of Art, 1991.",
-          "page_number": "Mentioned: p. 45; Reproduced: p. 46",
-          "url": null
-        },
-        {
-          "citation": "Chong, Alan. <em>European &amp; American Painting in the Cleveland Museum of Art: A Summary Catalogue</em>. Cleveland, OH: Cleveland Museum of Art, 1993.",
-          "page_number": "Reproduced: p. 43",
-          "url": null
-        },
-        {
-          "citation": "Kissick, John. <em>Art, Context and Criticism</em>. Madison, WI: Brown &amp; Benchmark, 1993.",
-          "page_number": "Reproduced: p. 352",
-          "url": null
-        },
-        {
-          "citation": "Cunningham, Lawrence S., and John J. Reich. <em>Culture and Values: a Survey of the Western Humanities</em>. Second edition. Fort Worth, IN: Holt, Rinehart, and Winston, 1994.",
-          "page_number": "Reproduced: p. 282",
-          "url": null
-        },
-        {
-          "citation": "Janson, H. W. <em>History of Art</em>. Fifth edition. New York, NY: Prentice Hall &amp; Harry Abrams, 1995.",
-          "page_number": "Reproduced: p. 42, pl. 26",
-          "url": null
-        },
-        {
-          "citation": "Barratt, Carrie Rebora. <em>John Singleton Copley in America</em>. New York: Metropolitan Museum of Art, distributed by H.N. Abrams, 1995.",
-          "page_number": "Reproduced: p. 209",
-          "url": null
-        },
-        {
-          "citation": "Kissick, John. <em>Art, Context and Criticism</em>. Second edition. Madison, WI: Brown &amp; Benchmark, 1996.",
-          "page_number": "Reproduced: p. 382",
-          "url": null
-        },
-        {
-          "citation": "Kane, Patricia E., Francis Hill Bigelow, John Marshall Phillips, and Jeannine J. Falino. <em>Colonial Massachusetts Silversmiths and Jewelers: A Biographical Dictionary Based on the Notes of Francis Hill Bigelow &amp; John Marshall Phillips</em>. New Haven, CT: Yale University Art Gallery, 1997.",
-          "page_number": "Reproduced: p. 615",
-          "url": null
-        },
-        {
-          "citation": "Rather, Susan. \"Carpenter, Tailor, Shoemaker, Artist: Copley and Portrait Painting around 1770.\" <em>The Art Bulletin.</em> 79:2 (June 1997).",
-          "page_number": "Mentioned: p. 284-5; Reproduced: p. 285",
-          "url": null
-        },
-        {
-          "citation": "Ohlig, Rudolf, and Hildegard Hogen. <em>Der Glanz der Residenzen: Renaissance und Barock in Europa, Schwarzafrika und Altamerika</em>. Leipzig: F.A. Brockhaus, 1998.",
-          "page_number": "Reproduced: p. 424",
-          "url": null
-        },
-        {
-          "citation": "Ward, Gerald W. R. \"Nathaniel Hurd.\" <em>American National Biography,</em> v. 2. ed. Garraty, John A., and Mark C. Carnes. New York, NY: Oxford University Press, 1999.",
-          "page_number": "Mentioned; p. 556-7",
-          "url": null
-        },
-        {
-          "citation": "Fortune, Brandon Brame, and Deborah Jean Warner. <em>Franklin and His Friends: Portraying the Man of Science in Eighteenth-Century America</em>. Washington, D.C.: Smithsonian National Portrait Gallery, 1999.",
-          "page_number": "Reproduced: p. 62, fig. 4-14",
-          "url": null
-        },
-        {
-          "citation": "May, Sally Ruth, Jane Takac, and Barbara J. Bradley. <em>Knockouts: A Pocket Guide</em>. Cleveland, OH: Cleveland Museum of Art, 2001.",
-          "page_number": "Reproduced: p. 44",
-          "url": null
-        },
-        {
-          "citation": "Kammen, Michael et al. Seeing America: Painting and Sculpture from the Collection of the Memorial Art Gallery of the University of Rochester. Rochester, N.Y.: University of Rochester Press, 2006.",
-          "page_number": "Reproduced: p. 22",
-          "url": null
-        },
-        {
-          "citation": "Ward, Gerald W. R. <em>Paul Revere: Sons of Liberty Bowl. </em>Boston: MFA Publications, Museum of Fine Arts, Boston, 2016.",
-          "page_number": "Reproduced: p. 11",
-          "url": null
-        },
-        {
-          "citation": "Rather, Susan. <em>The American School: Artists and Status in the Late-Colonial and Early National Era</em>. New Haven, CT : Yale University Press, 2016.",
-          "page_number": "Mentioned & Reproduced: pp. 41-42, fig. 30",
-          "url": null
-        },
-        {
-          "citation": "Ripley, Elizabeth. <em>Copley; A Biography</em>. Philadelphia: J. B. Lippincott Company, 1967.",
-          "page_number": "Mentioned: p. 24; Reproduced: p. 25",
-          "url": null
-        }
       ],
       "catalogue_raisonne": null,
       "url": "https://clevelandart.org/art/1915.534",
@@ -739,15 +212,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 110 x 140.5 x 8.5 cm (43 5/16 x 55 5/16 x 3 3/8 in.); Unframed: 92 x 122.6 cm (36 1/4 x 48 1/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.1,
-          "width": 1.405,
-          "depth": 0.085
-        },
-        "unframed": {
           "height": 0.92,
           "width": 1.226
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -1048,506 +514,6 @@ const dataApi = {data:[
         ]
       },
       "citations": [
-        {
-          "citation": "Milliken, William M. \"The Second Exhibition of Contemporary American Painting.\" <em>The Bulletin of the Cleveland Museum of Art.</em> 9:6 (June, 1922). 95-102.",
-          "page_number": "Mentioned: p. 95-96; Reproduced: p. 106",
-          "url": "https://www.jstor.org/stable/25136578"
-        },
-        {
-          "citation": "Glasier, Jessie C. \"Museum Gets Prize-Winning Canvases: Bellows Subject, Kent Landscape Are Acquisitions.\" <em>The Plain Dealer </em>(Cleveland, OH), June 18, 1922.",
-          "page_number": "Reproduced: p. 3",
-          "url": null
-        },
-        {
-          "citation": "\"Cleveland Museum Acquires Typical Pictures by Bellows and Kent.\" <em>American Art News.</em> 20:37 (24 June 1922). pp. 1-10.",
-          "page_number": "Reproduced: p. 6",
-          "url": null
-        },
-        {
-          "citation": "Milliken, William M. \"Two Examples of Modern Painting: The Maine Coast, by Rockwell Kent.\" <em>The Bulletin of the Cleveland Museum of Art.</em> 9:10 (December, 1922). pp. 171-175.",
-          "page_number": "Reproduced: front cover",
-          "url": null
-        },
-        {
-          "citation": "<em>Memorial Exhibition of the Work of George Bellows. </em>New York, NY: Metropolitan Museum of Art, 1925.",
-          "page_number": "Mentioned: p. 18, 24; Reproduced: p. 48",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art</em>. Cleveland, OH: The Cleveland Museum of Art, 1925.",
-          "page_number": "Reproduced: p. 36",
-          "url": "https://archive.org/details/CMAHandbook_80839/page/n38"
-        },
-        {
-          "citation": "Cortissoz, Royal. \"Paintings and Prints by George Bellows: The Memorial Exhibition at the Metropolitan.\" <em>New York Herald Tribune</em> (New York, NY), October 11, 1925.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Isham, Samuel, and Royal Cortissoz. <em>The History of American Painting</em>. New York, NY: Macmillan Company, 1927.",
-          "page_number": "Mentioned: p. 576-579; Reproduced: p. 568",
-          "url": null
-        },
-        {
-          "citation": "Mather, Frank Jewett, Charles Rufus Morey, and W. J. Henderson. <em>The Pageant of America: The American Spirit in Art</em>. New Haven, CT: Yale University Press, 1927.",
-          "page_number": "Mentioned: p. 138-139, 153-154; Reproduced: p. 153, fig. 249",
-          "url": null
-        },
-        {
-          "citation": "\"Un Artiste Americain.\" <em>L'illustration.</em> 85 (September, 1927). pp. 308-31.",
-          "page_number": "Reproduced: p. 310",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art</em>. Cleveland, OH: The Cleveland Museum of Art, 1928.",
-          "page_number": "Reproduced: p. 44",
-          "url": "https://archive.org/details/CMAHandbook1928/page/n48"
-        },
-        {
-          "citation": "Bellows, Emma S. <em>The Paintings of George Bellows</em>. New York, NY: A.A. Knopf, 1929.",
-          "page_number": "Mentioned: p. VIII-XI; Reproduced: fig. 20",
-          "url": null
-        },
-        {
-          "citation": "Kelly, Grace V. \"'Stag at Sharkey's.\" <em>The Plain Dealer </em>(Cleveland, OH), May 9, 1929.",
-          "page_number": "Mentioned: p. 24",
-          "url": null
-        },
-        {
-          "citation": "Eggers, George W. <em>George Bellows</em>. New York: Whitney Museum of American Art, 1931.",
-          "page_number": "Mentioned: p. 7-18; Reproduced: p. 42-43",
-          "url": null
-        },
-        {
-          "citation": "Neuhaus, Eugen. <em>The History &amp; Ideals of American Art</em>. Stanford University, CA: Stanford University Press; London: Oxford University Press, 1931.",
-          "page_number": "Reproduced: p. 339-340",
-          "url": null
-        },
-        {
-          "citation": "Clark, Edna Maria. <em>Ohio Art and Artists</em>. Richmond, VA: Garrett &amp; Massie, 1932.",
-          "page_number": "p. 205-210",
-          "url": null
-        },
-        {
-          "citation": "<em>American Painting &amp; Sculpture, 1862-1932</em>. New York, NY: Museum of Modern Art, 1932.",
-          "page_number": "Mentioned: p. 25",
-          "url": null
-        },
-        {
-          "citation": "<em>Olympic Competition and Exhibition of Art: Catalogue of the Exhibition at the Los Angeles Museum of History, Science and Art</em>: Los Angeles, CA: Neuner Printing &amp; Lithograph Co., 1932.",
-          "page_number": "Mentioned: p. 50; Reproduced: illus. section",
-          "url": null
-        },
-        {
-          "citation": "Mechlin, Leila. \"The Olympic Art Exhibition.\" <em>The American Magazine of Art.</em> 25:3 (September, 1932). p. 136-150.",
-          "page_number": "Mentioned: p. 148",
-          "url": null
-        },
-        {
-          "citation": "\"Art's Progress in America for 100 Years Shown at World's Fair.\" <em>The Art Diges</em>t. 8:16 (15 May 1933). p. 28-29.",
-          "page_number": "Mentioned: p. 28-29; Reproduced: 29",
-          "url": null
-        },
-        {
-          "citation": "Frankfurter, Alfred M. \"Art in the Century of Progress.\" <em>The Fine Arts.</em> 20:2 (June, 1933). p. 7-8, 59-61.",
-          "page_number": "Mentioned: p. 7-8, 59-61; Reproduced: p. 44",
-          "url": null
-        },
-        {
-          "citation": "\"A Stag at Sharkey's.\" <em>Chicago Tribune</em> (Chicago, IL), October 22, 1933.",
-          "page_number": "Reproduced:",
-          "url": null
-        },
-        {
-          "citation": "\"The Picture of the Week.\" <em>The Plain Dealer </em>(Cleveland, OH), November 12 1933.",
-          "page_number": "Reproduced",
-          "url": null
-        },
-        {
-          "citation": "Pollak, Frances M., and Greta A. Cornell. \"George Wesley Bellows-Painter and Graver.\" <em>The Index of Twentieth Century Artists</em>. 1:6 (March, 1934). p. 92-93.",
-          "page_number": "Mentioned: p. 92-93",
-          "url": null
-        },
-        {
-          "citation": "Gardner, Helen. <em>Art Through the Ages: An Introduction to Its History &amp; Significance</em>. New York: Harcourt, Brace and Company, 1936.",
-          "page_number": "Mentioned: p. 687",
-          "url": null
-        },
-        {
-          "citation": "Burroughs, Alan. <em>Limners and Likenesses; Three Centuries of American Painting</em>. Cambridge, MA: Harvard University Press, 1936.",
-          "page_number": "Mentioned: p. 206-211.",
-          "url": null
-        },
-        {
-          "citation": "<em>Catalogue of the Twentieth Anniversary Exhibition of the Cleveland Museum of Art: The Official Art Exhibit of the Great Lakes Exposition.</em> Cleveland, Ohio: Artcraft Printing Company, 1936.",
-          "page_number": "Mentioned: p. 129-130",
-          "url": null
-        },
-        {
-          "citation": "<em>Catalogue of an Exhibition of American Painting from 1860 Until Today at the Cleveland Museum of Art</em>. Cleveland, OH: Artcraft Printing Co., 1937.",
-          "page_number": "Mentioned: p. 11-12",
-          "url": null
-        },
-        {
-          "citation": "<em>Trois siècles d'art aux États-Unis: exposition organisée en collaboration avec le Museum of Modern Art, New-York</em>. Paris, France: Éditions des musées nationaux, 1938.",
-          "page_number": "Reproduced: illus. fig. 28",
-          "url": null
-        },
-        {
-          "citation": "\"Bellows (1882-1925).\" <em>Life, </em>31 October 1938.",
-          "page_number": "Reproduced",
-          "url": null
-        },
-        {
-          "citation": "<em>Life in America: A Special Loan Exhibition of Paintings Held During the Period of the New York World's Fair, April 24 to October 29</em>. New York, NY: [Scribner Press], 1939.",
-          "page_number": "Mentioned and Reproduced: p. 211",
-          "url": null
-        },
-        {
-          "citation": "Stites, Raymond S. <em>The Arts and Man</em>. New York, NY: Whittlesey House; London: McGraw-Hill Book Company, Inc., 1940.",
-          "page_number": "Mentioned: p. 804-806; Reproduced: p. 806",
-          "url": null
-        },
-        {
-          "citation": "<em>An Exhibition of Great Paintings in Aid of the Canadian Red Cross and of Small Pictures by Members of the Ontario Society of Artists</em>. Toronto, Canada: The Art Gallery of Toronto, 1940.",
-          "page_number": "Reproduced: p. 24",
-          "url": null
-        },
-        {
-          "citation": "McB[ride], H[enry]. \"As to the Style in Art.\" <em>The Sun</em> (New York, NY), January 6, 1940.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Francis, Henry Sayles. \"The Lithographs of George Wesley Bellows.\" <em>Print Collector's Quarterly. </em>27 (April, 1940). p. 138-165.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Milliken, William M. \"Silver Jubilee Exhibition.\" <em>The Bulletin of the Cleveland Museum of Art</em> 28, no. 6 (1941): 88-111.",
-          "page_number": "Mentioned: p. 89; Reproduced: p. 111",
-          "url": "https://www.jstor.org/stable/25140932"
-        },
-        {
-          "citation": "\"Cleveland Offers the Evidence for the First 25 Years.\" <em>ARTnews.</em> 40:11 (September, 1941). p. 13-25.",
-          "page_number": "Mentioned: p. 13, 25; Reproduced: p. 25",
-          "url": null
-        },
-        {
-          "citation": "Boswell, Peyton. <em>George Bellows</em>. New York, NY: Crown Publishers, 1942.",
-          "page_number": "Mentioned: p. 9-30; Reproduced: p. 37",
-          "url": null
-        },
-        {
-          "citation": "Walker, John, and Macgill James. <em>Great American Paintings from Smibert to Bellows, 1729-1924</em>. London: Oxford University Press, 1943.",
-          "page_number": "Mentioned: p. 1, 17-20; Reproduced: p. 21, fig. 101",
-          "url": null
-        },
-        {
-          "citation": "Boswell, Peyton. \"Bellows' First Patron.\" <em>Art Digest.</em> 18 (15 January 1943).",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "<em>Sport in American Art</em>. Boston, MA: Museum of Fine Arts, Boston, 1944.",
-          "page_number": "Mentioned: p. 8",
-          "url": null
-        },
-        {
-          "citation": "Edgell, George H. \"Pursuit of Pleasure in Paint: Boston Presents the First Exhibition of 'Sport in American Art.'\" <em>ARTnews.</em> 43:12 (1-14 October, 1944). p. 13-26.",
-          "page_number": "Mentioned: p. 13-14, 26; Reproduced: p. 15",
-          "url": null
-        },
-        {
-          "citation": "<em>Paintings in the Cleveland Museum of Art. </em>[Cleveland]: The Cleveland Museum of Art, 1945.",
-          "page_number": "Reproduced: p. 15",
-          "url": "https://archive.org/details/CMAPaintings1945/page/n23"
-        },
-        {
-          "citation": "Tunis, John R. \"Painter of the Prize Ring Drama: The National Gallery Honors George Bellows, Who Captured Not Only the Color, But Also the Cruelty of the Prize Ring.\" <em>The New York Times Magazine</em> (New York, NY), 7 January 1945.",
-          "page_number": "Mentioned: p. 18; Reproduced: p. 19",
-          "url": null
-        },
-        {
-          "citation": "Sweet, Frederick A. \"Bellows 23 Years after Dempsey-Firpo.\" <em>ARTnews.</em> 44:19 (January, 1946). p. 12-28.",
-          "page_number": "Mentioned: p. 12-13, 27-28",
-          "url": null
-        },
-        {
-          "citation": "<em>American Painting: From the Eighteenth Century to the Present Day</em>. London, England: The Tate Gallery, 1946.",
-          "page_number": "Mentioned: p. 9",
-          "url": null
-        },
-        {
-          "citation": "<em>George Bellows: Paintings, Drawings and Prints</em>. Chicago, IL: The Art Institute of Chicago, 1946.",
-          "page_number": "Mentiond: p. 37",
-          "url": null
-        },
-        {
-          "citation": "Bulliet, C. J. \"First Full View of George Bellows for Chicago.\"<em> Art Digest. </em>21 (1 February 1946).",
-          "page_number": "Mentioned: p. 8",
-          "url": null
-        },
-        {
-          "citation": "\"George W. Bellows: An American Master of Realistic Painting Comes Into His Own With Big Memorial Show.\" <em>Life,</em> March 25, 1946.",
-          "page_number": "Mentioned: p. 75-83; 1917 lithograph Reproduced: p. 76-77",
-          "url": null
-        },
-        {
-          "citation": "Rich, Daniel Catton. \"Bellows Revalued.\" <em>Magazine of Art. </em>39 (April, 1946): p. 145-147.",
-          "page_number": "Mentioned: p. 145-147",
-          "url": null
-        },
-        {
-          "citation": "\"American Art: From the XVIIIth Century to the Present Day: Pictures Now on Exhibition at the Tate Gallery.\" <em>The Illustrated London News,</em> June 22, 1946.",
-          "page_number": "Mentioned: p. 688-689; Reproduced: p. 688",
-          "url": null
-        },
-        {
-          "citation": "Sutton, Denys. \"La Peinture Américaine à la Tate Gallery.\" <em>Gazette des Beaux-Arts</em>, June 28, 1946.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Winchester, Alice. \"American Painting in London: A Comment on The Tate Gallery Exhibition.\" <em>Antiques. </em>51:2 (February, 1947). p. 100-127.",
-          "page_number": "Mentioned: p. 100-101, 108, 127",
-          "url": null
-        },
-        {
-          "citation": "Dame, Lawrence.\"Regarding Art: The Stags on Ropes.\" <em>Boston Herald,</em> October 17, 1948.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Gardner, Helen. <em>Art Through the Ages</em>. 3rd edition. New York: Harcourt, Brace and Co, 1949.",
-          "page_number": "Mentioned: p. 395-396; Reproduced: p. 395",
-          "url": null
-        },
-        {
-          "citation": "\"Revolt in Boston: Shootin' Resumes in the Art World.\" <em>Life,</em> February 21, 1949.",
-          "page_number": "Reproduced: p. 85",
-          "url": null
-        },
-        {
-          "citation": "<em>Catalogue de reproductions en couleurs de la peinture de 1860 à 1949</em>. Paris: UNESCO, 1949.",
-          "page_number": "Mentioned: p. 44-45; Reproduced: p. 45",
-          "url": null
-        },
-        {
-          "citation": "Rowland, Benjamin, Jr. \"American Painting Since 1900.\" <em>Phoenix</em>. 4 (April 1949). p. 85-111.",
-          "page_number": "Reproduced: p. 91",
-          "url": null
-        },
-        {
-          "citation": "Robb, David M. <em>The Harper History of Painting: The Occidental Tradition</em>. New York: Harper, 1951.",
-          "page_number": "Mentioned: p. 892-896; Reproduced: p. 894, fig. 494",
-          "url": null
-        },
-        {
-          "citation": "Bazin, Germain. <em>History of Modern Painting</em>. New York: Hyperion Press; distributed by Macmillan, 1951.",
-          "page_number": "Mentioned: p. 285, 287; Reproduced: p. 290",
-          "url": null
-        },
-        {
-          "citation": "\"Pittura Americana Moderna.\" <em>Sele arte</em>. Firenze: Studio italiano di storia dell'arte, 1952.",
-          "page_number": "Mentioned: p. 13-16; Reproduced: p. 13",
-          "url": null
-        },
-        {
-          "citation": "Brown, Milton W. <em>American Painting: From the Armory Show to the Depression.</em> Princeton, NJ: Princeton University Press, 1955.",
-          "page_number": "Mentioned: p. 33-36, 167-172; Reproduced: p. 34",
-          "url": null
-        },
-        {
-          "citation": "Morris, Charles W. <em>Varieties of Human Value</em>. Chicago, IL: University of Chicago Press, 1956.",
-          "page_number": "Mentioned: p. 144-162; Reproduced: fig. 77",
-          "url": null
-        },
-        {
-          "citation": "Craven, Thomas. <em>The Rainbow Book of Art</em>. Cleveland: World Pub. Co, 1956.",
-          "page_number": "Mentioned: p. 236-237; Reproduced: p. 233",
-          "url": null
-        },
-        {
-          "citation": "Schulberg, Budd. <em>The Harder They Fall</em>. 2nd edition. New York: Random House Publishing, 1956.",
-          "page_number": "Reproduced: cover",
-          "url": null
-        },
-        {
-          "citation": "Eliot, Alexander. <em>Three Hundred Years of American Painting</em>. New York: Time Inc, 1957.",
-          "page_number": "Mentioned: p. 284, 289-293; Reproduced: p. 290",
-          "url": null
-        },
-        {
-          "citation": "<em>George Bellows: A Retrospective Exhibition</em>. Washington, DC: National Gallery of Art, 1957.",
-          "page_number": "Reproduced: p. 47",
-          "url": null
-        },
-        {
-          "citation": "<em>Paintings by George Bellows at Columbus Gallery of Fine Arts. </em>Columbus, OH: The Columbus Gallery of Fine Arts, 1957.",
-          "page_number": "Reproduced: cover",
-          "url": null
-        },
-        {
-          "citation": "Huth, John F. \"An Artist at Ohio.\" <em>Pictorial Magazine</em>, <em>The Plain Dealer </em>(Cleveland, OH), January 20, 1957.",
-          "page_number": "Reproduced: p. 18; Mentioned; pp. 18-19",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>The Cleveland Museum of Art Handbook.</em> Cleveland, OH: The Cleveland Museum of Art, 1958.",
-          "page_number": "Mentioned and Reproduced: cat. no. 550",
-          "url": "https://archive.org/details/CMAHandbook1958/page/n102"
-        },
-        {
-          "citation": "Milliken, William Mathewson. <em>The Cleveland Museum of Art Collections</em>. Cleveland, OH: Cleveland Museum of Art, 1960.",
-          "page_number": "Mentioned: p. 40-42",
-          "url": null
-        },
-        {
-          "citation": "Munro, Eleanor C. <em>The Golden Encyclopedia of Art: Painting, Sculpture, Architecture, and Ornament, from Prehistoric Times to the Twentieth Century</em>. New York: Golden Press, 1961.",
-          "page_number": "Reproduced: p. 243",
-          "url": null
-        },
-        {
-          "citation": "<em>The Fireside Book of Boxing. </em>Edited by Wilfred Charles Heinz. New York: Simon And Schuster, 1961.",
-          "page_number": "Reproduced: front cover",
-          "url": null
-        },
-        {
-          "citation": "Chase, Alice Elizabeth. <em>Famous Paintings: An Introduction to Art</em>. New York: Platt &amp; Munk, 1962.",
-          "page_number": "Reproduced: p. 54-55",
-          "url": null
-        },
-        {
-          "citation": "Selvig, Forrest, ed. <em>Four Centuries of American Art</em>. Minneapolis, MN: The Minneapolis Institute of Arts, 1963.",
-          "page_number": "Reproduced: p. 23",
-          "url": null
-        },
-        {
-          "citation": "Bazin, Germain. <em>Kindlers Malerei Lexikon: 1000 Malersignaturen, 1200 farbige Reproducktionen, 3000 schwarzweisse Reproduktionen in sechs Bänden</em>. Zurich: Kindler Verlag, 1964.",
-          "page_number": "Mentioned: p. 302-303; Reproduced: p. 302.",
-          "url": null
-        },
-        {
-          "citation": "<em>200 Years of American Painting, April 1-May 31, 1964</em>. St. Louis, MO: City Art Museum of St. Louis, 1964.",
-          "page_number": "Mentioned and Reproduced: p. 35",
-          "url": null
-        },
-        {
-          "citation": "Seaver, Edwin. \"The Sand Cart, George Bellows (American School 1882-1925).\" <em>Book-of-the-Month-Club News</em>, 1965.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Morgan, Charles H. <em>George Bellows, Painter of America</em>. New York: Reynal, 1965.",
-          "page_number": "Mentioned: p. 9, 69, 98-102, 124-127, 197-199, 217-221, 254-255; Reproduced: pp. 320, 321",
-          "url": null
-        },
-        {
-          "citation": "Laver, James. <em>The Age of Optimism: Manners and Morals 1848-1914</em>. London: Weidenfeld &amp; Nicolson, 1966.",
-          "page_number": "Reproduced",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966</em>. Cleveland, OH: The Cleveland Museum of Art, 1966.",
-          "page_number": "Reproduced: p. 190",
-          "url": "https://archive.org/details/CMAHandbook1966/page/n214"
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
-          "page_number": "Reproduced: p. 190",
-          "url": "https://archive.org/details/CMAHandbook1969/page/n214"
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
-          "page_number": "Reproduced: p. 236",
-          "url": "https://archive.org/details/CMAHandbook1978/page/n256"
-        },
-        {
-          "citation": "<em>George Wesley Bellows: Paintings, Drawings, and Prints</em>. Columbus, OH: Columbus Museum of Art, 1979.",
-          "page_number": "Reproduced: p. 23",
-          "url": null
-        },
-        {
-          "citation": "Kitaj, R. B., and Timothy Hyman. \"A Return to London\" IN <em>Kitaj Paintings, Drawings, Pastels.</em> John Ashebury, Joe Shannon, Jane Livingston, 41. New York, N.Y.: Thames and Hudson, 1983.",
-          "page_number": "Mentioned: p. 41",
-          "url": null
-        },
-        {
-          "citation": "Ohio Historical Society, and Ohio History Connection. Timeline: A Publication of the Ohio Historical Society. [Columbus, Ohio]: The Society, 1984.",
-          "page_number": "20",
-          "url": null
-        },
-        {
-          "citation": "Salwen, Peter. <em>Upper West Side Story: A History and Guide. </em>New York: Abbeville Press Publishers, 1989.",
-          "page_number": "Referenced: p. 181-182, 202",
-          "url": null
-        },
-        {
-          "citation": "Haskell, Barbara. <em>The American Century: Art &amp; Culture, 1900-1950</em>. New York, NY: Whitney Museum of American Art, 1999.",
-          "page_number": "Mentioned and Reproduced: p. 92-93",
-          "url": null
-        },
-        {
-          "citation": "Christie, Manson &amp; Woods International Inc. American Art. New York: Christie's, December 5, 2013 .",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Fagg, John. \"George Bellows.\" <em>Print Quarterly.</em> 31:1 (March 2014). 107-111.",
-          "page_number": "Reproduced: p. 110, fig. 106.",
-          "url": null
-        },
-        {
-          "citation": "Gillies, Max. \"Exploring Ohio's Art.\" <em>Fine Art Connoisseur. </em>11:5 (September/October 2014).",
-          "page_number": "Reproduced: p. 100",
-          "url": null
-        },
-        {
-          "citation": "Milan, Wardell, Cay Sophie Rabinowitz, Alvin Hall, Carter E. Foster, and Leslie Hewitt. <em>Wardell Milan: Between Late Summer and Early Fall</em>. New York, NY : Osmos Books, 2015.",
-          "page_number": "Reproduced: P. 37",
-          "url": null
-        },
-        {
-          "citation": "Brock, Charles. \"George Bellows: Reviews and Reflections.\" In <em>George Bellows Revisited: New Considerations of the Painter's Oeuvre.</em> Melissa M. Wolfe, ed. Newcastle upon Tyne, UK: Cambridge Scholars Publishing, 2016.",
-          "page_number": "Reproduced: p. 7, fig. 1.1. Mentioned 9, 10, 103, 105.",
-          "url": null
-        },
-        {
-          "citation": "Boylan, Alexis L. <em>Ashcan Art, Whiteness, and the Unspectacular Man.</em> New York: Bloomsbury Academic, 2017.",
-          "page_number": "Reproduced: pl. 4",
-          "url": null
-        },
-        {
-          "citation": "Slayton, Robert A. <em>Beauty in the City: The Ashcan School. </em>Albany: Excelsior Editions, State University of New York Press, 2017.",
-          "page_number": "Reproduced: p. 143, fig. 8.13",
-          "url": null
-        },
-        {
-          "citation": "Corbett, David Peters. Die Ashcan School: Lebensbilder der New Yorker und iher Stadt. In <em>Es war einmal in Amerika: 300 Jahre US-Amerikanische Kunst, 164-171. </em>Barbara Schaefer and Anita Hachmann, 2018.",
-          "page_number": "Reproduced; p. 168, abb. 13",
-          "url": null
-        },
-        {
-          "citation": "Johnston, April Nehring. <em>The Making of Cleveland's Artist: The Aesthetic and Cultural Politics of Boundary Crossing in the Industrial Landscape Paintings of Carl Gaertner, 1923-1952.</em> Thesis, Washington University, 2019.",
-          "page_number": "Mentioned: P. 24",
-          "url": null
-        },
-        {
-          "citation": "Sublette, J. Mark. <em>Maynard Dixon's American West: Along the Distant Mesa</em>. Tucson, AZ: Mark Sublette Medicine Man Gallery, 2018.",
-          "page_number": "Mentioned and reproduced: p. 267, fig. 318",
-          "url": null
-        },
-        {
-          "citation": "\"Punch drunk.\" <em>Christie's magazine</em> (November/December 2019): 108-117.",
-          "page_number": "Mentioned p. 113-114; Reproduced p. 116-117",
-          "url": null
-        },
-        {
-          "citation": "Pearson, Harry. \"Competitive streaks.\"<em> Apollo</em> 193, no. 698 (June 2021): 60-65.",
-          "page_number": "Reproduction p.60, fig. 1; mentioned p. 64",
-          "url": ""
-        }
       ],
       "catalogue_raisonne": null,
       "url": "https://clevelandart.org/art/1922.1133",
@@ -1614,15 +580,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 112.4 x 93 x 12.1 cm (44 1/4 x 36 5/8 x 4 3/4 in.); Unframed: 81 x 61.2 cm (31 7/8 x 24 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.124,
-          "width": 0.93,
-          "depth": 0.121
-        },
-        "unframed": {
           "height": 0.81,
           "width": 0.612
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -1755,266 +714,6 @@ const dataApi = {data:[
         ]
       },
       "citations": [
-        {
-          "citation": "Hamerton, Philip Gilbert. \"The Salon of 1863.\" <em>The Fine Arts Quarterly Review</em> 1 (1863): 15-262.",
-          "page_number": "Mentioned: P. 244",
-          "url": null
-        },
-        {
-          "citation": "Mantz, Paul. \"Salon de 1863.\" <em>Gazette des Beaux-Arts</em> 14 (1863): 481-506.",
-          "page_number": "Mentioned: P. 498-499",
-          "url": null
-        },
-        {
-          "citation": "Burty, Philippe. \"Une Lettre de M. Courbet.\" <em>La Chronique des Arts et de la Curiosité </em>June 7, 1863: 253.",
-          "page_number": "Mentioned: P. 253",
-          "url": null
-        },
-        {
-          "citation": "<em>Exposition des œuvres de Gustave Courbet: a l'École des beaux-arts (mai 1882): Catalogu</em>e. Paris: Impr. Émile Martinet, 1882.",
-          "page_number": "Mentioned: Supplement p. 26",
-          "url": null
-        },
-        {
-          "citation": "Estignard, Alexandre. <em>Courbet Sa Vie, Ses Oeuvres.</em> Besançon: Delagrange-Louys, 1896.",
-          "page_number": "Mentioned: P. 162",
-          "url": null
-        },
-        {
-          "citation": "Riat, Georges, and Paul Vitry. <em>Gustave Courbet, peintre</em>. Paris, France: H. Floury, 1906.",
-          "page_number": "Reproduced: p. 214",
-          "url": null
-        },
-        {
-          "citation": "Léger, Charles. <em>Courbet, selon les caricatures et les images</em>. Paris, France: P. Rosenberg, 1920.",
-          "page_number": "Reproduced: p. 119",
-          "url": null
-        },
-        {
-          "citation": "Léger, Charles. <em>Courbet.</em> Paris: Nilsson, 1925.",
-          "page_number": "Mentioned: P. 72",
-          "url": null
-        },
-        {
-          "citation": "Alexandre, Arsene. \"Portraits et Figures de Femmes.\" <em>La Renaissance </em>11 (July/August 1928).",
-          "page_number": "Mentioned and reproduced: P. 261, no. 45",
-          "url": null
-        },
-        {
-          "citation": "Léger, Charles. <em>Courbet</em>. Paris: Éditions G. Crès, 1929.",
-          "page_number": "Mentioned: P. 95, 98; reproduced: Pl. 35",
-          "url": null
-        },
-        {
-          "citation": "Courthion, Pierre. <em>Courbet</em>. Paris, France: Librairie Floury, 1931.",
-          "page_number": "Mentioned: p. 31; Reproduced: p. 91, pl. 57",
-          "url": null
-        },
-        {
-          "citation": "Courthion, Pierre. <em>Courbet.</em> Paris: Librairie Floury, 1931.",
-          "page_number": "Mentioned: P. 34, 91; reproduced: Pl. 57",
-          "url": null
-        },
-        {
-          "citation": "Léger, Charles. <em>Courbet</em>. Paris, France: Braun, 1934.",
-          "page_number": "Reproduced: p.38",
-          "url": null
-        },
-        {
-          "citation": "Baillods, Jules. <em>Courbet Vivant</em>. Neuchâtel, Switzerland: Delachaux &amp; Niestlé, 1940.",
-          "page_number": "Mentioned: P. 48",
-          "url": null
-        },
-        {
-          "citation": "Léger, Charles. <em>Courbet et son Temps; Lettres et Documents Inédits.</em> Paris: Éditions Universelles, 1948.",
-          "page_number": "Mentioned: P. 86",
-          "url": null
-        },
-        {
-          "citation": "Mack, Gerstle. <em>Gustave Courbet</em>. New York, NY: Knopf, 1951.",
-          "page_number": "Reproduced: p. 170, pl. 37",
-          "url": null
-        },
-        {
-          "citation": "<em>Les Amis de Gustave Courbet </em>20 (1957): 11.",
-          "page_number": "Mentioned and reproduced: P. 11",
-          "url": null
-        },
-        {
-          "citation": "Lee, Sherman E. \"Year in Review 1962.\" <em>The Bulletin of The Cleveland Museum of Art XLVIIII</em>, no.9 (November, 1962):198-227.",
-          "page_number": "Mentioned: p. 229, no. 89",
-          "url": null
-        },
-        {
-          "citation": "Lurie, Ann Tzeutschler. \"Gustave Courbet, Madame Boreau..\" <em>The Bulletin of The Cleveland Museum of Art XLVIIII</em>, no.4 (April, 1962):66-71.",
-          "page_number": "Reproduced: cover",
-          "url": null
-        },
-        {
-          "citation": "Cleveland Museum of Art, “Madame Boreau by Courbet,” April 2, 1962, Cleveland Museum of Art Archives.",
-          "page_number": null,
-          "url": "https://archive.org/details/cmapr0926"
-        },
-        {
-          "citation": "Saisselin, Rémy G. <em>Style, Truth, and the Portrait</em>. Cleveland, OH: Cleveland Museum of Art, 1963.",
-          "page_number": "Reproduced: p. 76",
-          "url": null
-        },
-        {
-          "citation": "Saisselin, Rémy Gilbert. “Portrait in History: Some Connections between Art and Literature.” <em>Apollo: The International Magazine for Collectors</em> 78 (October 1963): 281–88.",
-          "page_number": "Reproduced: P. 287",
-          "url": null
-        },
-        {
-          "citation": "Borea, E. \"Notiziario: Style, Truth, and the Portrait.\" <em>Arte Antica e Moderna </em>24 (Ottobre-Dicembre 1963): 7-8.",
-          "page_number": "Mentioned and reproduced: P. 7-8, no. 16",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966</em>. Cleveland, OH: The Cleveland Museum of Art, 1966.",
-          "page_number": "Reproduced: p. 170",
-          "url": "https://archive.org/details/CMAHandbook1966/page/n194"
-        },
-        {
-          "citation": "<em>Courbet dans les Collections Privées Françaises ... 5 mai-25 juin 1966, [Galerie] Claude Aubry ... Paris. </em>Paris: Galerie C. Aubry, 1966.",
-          "page_number": "Reproduced: no. 13",
-          "url": null
-        },
-        {
-          "citation": "Aymar, Gordon Christian. <em>The Art of Portrait Painting; Portraits Through the Centuries As Seen Through the Eyes of a Practicing Portrait Painter</em>. Philadelphia, PA: Chilton Book Co, 1967.",
-          "page_number": "Reproduced: p. 78, pl. 35",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
-          "page_number": "Reproduced: p. 170",
-          "url": "https://archive.org/details/CMAHandbook1969/page/n194"
-        },
-        {
-          "citation": "Laclotte, Michel, Palma Bucarelli, and Hélène Toussaint. <em>Gustave Courbet (1819-1877)</em>. Rome. Italy: De Luca, 1969.",
-          "page_number": null,
-          "url": null
-        },
-        {
-          "citation": "Bonniot, Roger. <em>Gustave Courbet en Saintonge, 1862-1863</em>. Paris, France: C. Klincksieck, 1973.",
-          "page_number": "Reproduced: fig. 53; mentioned: P. 124, 209, 217-248, 269, 295-299",
-          "url": null
-        },
-        {
-          "citation": "Champa, Kermit Swiler. <em>Studies in Early Impressionism</em>. New Haven, CT: Yale University Press, 1973.",
-          "page_number": "Reproduced: p. 34, fig. 47",
-          "url": null
-        },
-        {
-          "citation": "Daber, Alfred. <em>Courbet, 1819-1877: </em>Paris, France: Galerie Daber, 1975.",
-          "page_number": "Reproduced: no. 6",
-          "url": null
-        },
-        {
-          "citation": "Toussaint, Hélène. <em>Gustave Courbet: 1819-1877 : [exposition organisée par la Réunion des musées nationaux et l'Arts Council of Great Britain], Grand Palais, 30 septembre 1977-2 janvier 1978 : [catalogue</em>. Paris, France: Ministère de la culture et de l'environnement, Éditions des musées nationaux, 1977.",
-          "page_number": "Reproduced: no. 68",
-          "url": null
-        },
-        {
-          "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
-          "page_number": "Reproduced: p. 210",
-          "url": "https://archive.org/details/CMAHandbook1978/page/n230"
-        },
-        {
-          "citation": "Fernier, Robert. <em>La vie et l'œuvre de Gustave Courbet: catalogue raisonné</em>. Lausanne, Switzerland: Bibliothèque des Arts, 1978.",
-          "page_number": "Reproduced: vol. I, no. 358",
-          "url": null
-        },
-        {
-          "citation": "Hofmann, Werner, and Klaus Herding. <em>Courbet und Deutschland: [Hamburger Kunsthalle, 19. Oktober-17. Dezember 1978, Städt. Galerie im Städelschen Kunstinst. Frankfurt am Main, 17. Januar-18. März 1979</em>. Köln, Germany: Du Mont, 1978.",
-          "page_number": "Reproduced: p. 37, fig. e",
-          "url": null
-        },
-        {
-          "citation": "Heilmeier, Hans. \"Von Ingres bis Picasso.\" <em>Das Kunstblatt</em> (1978): 277-288.",
-          "page_number": "Reproduced: P. 280",
-          "url": null
-        },
-        {
-          "citation": "Morse, John D. <em>Old Master Paintings in North America: Over 3000 Masterpieces by 50 Great Artists</em>. New York, NY: Abbeville Press, 1979.",
-          "page_number": "Reproduced: p. 72",
-          "url": null
-        },
-        {
-          "citation": "Abe, Yoshio. Courbet. <em>Kūrube</em>. Tōkyō, Japan: Kōdansha, 1981.",
-          "page_number": "Reproduced: p. 116, no. 30",
-          "url": null
-        },
-        {
-          "citation": "Foucart, Bruno, <em>Courbet</em>. Norwalk, CT: Easton Press, 1983.",
-          "page_number": "Reproduced: p. 48; Mentioned: p. 69",
-          "url": null
-        },
-        {
-          "citation": "Courthion, Pierre. <em>L'opera completa di Courbet</em>. Milano, Italy: Rizzoli, 1985.",
-          "page_number": "Reproduced: no. 341",
-          "url": null
-        },
-        {
-          "citation": "Faunce, Sarah, and Linda Nochlin. <em>Courbet Reconsidered</em>. Brooklyn, NY: Brooklyn Museum, 1988.",
-          "page_number": "Reproduced: no. 40",
-          "url": null
-        },
-        {
-          "citation": "ten-Doesschate Chu,, Petra. <em>Letters of Gustave Courbet</em>. Chicago, IL: University of Chicago Press, 1992.",
-          "page_number": "Mentioned: p. 218-219; Reproduced: p. 221, fig. 35",
-          "url": null
-        },
-        {
-          "citation": "Cleveland Museum of Art. <em>Masterpieces from East and West</em>. New York, NY: Rizzoli International, 1992.",
-          "page_number": "Reproduced: P. 140",
-          "url": null
-        },
-        {
-          "citation": "Abe, Yoshio . <em>Kūrube = Gustave Courbet</em>. Tōkyō, Japan: Asahi Shinbunsha, 1993.",
-          "page_number": "Reproduced: p. 91, pl. 37",
-          "url": null
-        },
-        {
-          "citation": "Chong, Alan. <em>European &amp; American Painting in the Cleveland Museum of Art: A Summary Catalogue. </em>Cleveland, Ohio: Cleveland Museum of Art, 1993.",
-          "page_number": "Reproduced: P. 45",
-          "url": null
-        },
-        {
-          "citation": "Andreotti, Margherita. \"The Joseph Winterbotham Collection.\" <em>Art Institute of Chicago Museum Studies</em> 20, no. 2 (1994): 111-92.",
-          "page_number": "Mentioned: P. 112",
-          "url": "https://www.jstor.org/stable/4112960"
-        },
-        {
-          "citation": "Kostenevich, A. G. <em>Hidden treasures revealed: impressionist masterpieces and other important French paintings preserved by the State Hermitage Museum, St. Petersburg</em>. New York, NY: Ministry of Culture of the Russian Federation, The State Hermitage Museum, St. Petersburg in association with H.N. Abrams, 1995.",
-          "page_number": "Reproduced: p. 33",
-          "url": null
-        },
-        {
-          "citation": "Fernier, Jean-Jacques. <em>Courbet, l'amour--: Baltasar Lobo, sculptures : Christian Welter, un regard amoureux</em>. Ornans, France: Musée Gustave Courbet, 1996.",
-          "page_number": "Reproduced: p. 82",
-          "url": null
-        },
-        {
-          "citation": "ten-Doesschate Chu, Petra, and Jörg Zutter. <em>Courbet: artiste et promoteur de son œuvre</em>. Paris, France: Flammarion, 1998.",
-          "page_number": "Reproduced: no. 19; p. 26-27",
-          "url": null
-        },
-        {
-          "citation": "D'Argencourt, Louise and Roger Diederen. <em>The Cleveland Museum of Art: Catalogue of Paintings, Part Four; European Paintings of the 19th Century.</em> Cleveland, OH: The Cleveland Museum of Art, 1999.",
-          "page_number": "Reproduced: p. 61",
-          "url": null
-        },
-        {
-          "citation": "Bajou-Charpentreau, Valérie, and Gustave Courbet. <em>Courbet</em>. Paris, France: A. Biro, 2003.",
-          "page_number": "Reproduced: p. 268",
-          "url": null
-        },
-        {
-          "citation": "Riat, Georges. <em>Gustave Courbet</em>. Ho Chi Minh City, Vietnam: Baseline Co, Ltd., 2008.",
-          "page_number": "Reproduced: p. 126, fig. 70",
-          "url": null
-        }
       ],
       "catalogue_raisonne": null,
       "url": "https://clevelandart.org/art/1962.2",
@@ -2081,15 +780,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 132.5 x 193.5 x 13 cm (52 3/16 x 76 3/16 x 5 1/8 in.); Unframed: 99.8 x 160.6 cm (39 5/16 x 63 1/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.325,
-          "width": 1.935,
-          "depth": 0.13
-        },
-        "unframed": {
           "height": 0.998,
           "width": 1.606
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -2798,15 +1490,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 183 x 203 x 4.5 cm (72 1/16 x 79 15/16 x 1 3/4 in.); Unframed: 170 x 189.5 cm (66 15/16 x 74 5/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.83,
-          "width": 2.03,
-          "depth": 0.045
-        },
-        "unframed": {
           "height": 1.7,
           "width": 1.895
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -3018,15 +1703,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 104.5 x 124.5 x 7.6 cm (41 1/8 x 49 x 3 in.); Unframed: 73.4 x 91.8 cm (28 7/8 x 36 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.045,
-          "width": 1.245,
-          "depth": 0.076
-        },
-        "unframed": {
           "height": 0.734,
           "width": 0.918
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -3285,15 +1963,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 123.8 x 106 x 7 cm (48 3/4 x 41 3/4 x 2 3/4 in.); Unframed: 92.5 x 72.4 cm (36 7/16 x 28 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.238,
-          "width": 1.06,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 0.925,
           "width": 0.724
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -3514,15 +2185,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 60 x 67.5 x 6 cm (23 5/8 x 26 9/16 x 2 3/8 in.); Unframed: 41 x 48.5 cm (16 1/8 x 19 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.6,
-          "width": 0.675,
-          "depth": 0.06
-        },
-        "unframed": {
           "height": 0.41,
           "width": 0.485
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -4212,15 +2876,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 128.3 x 105.7 x 14.6 cm (50 1/2 x 41 5/8 x 5 3/4 in.); Unframed: 99 x 79.8 cm (39 x 31 7/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.283,
-          "width": 1.057,
-          "depth": 0.146
-        },
-        "unframed": {
           "height": 0.99,
           "width": 0.798
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -4827,10 +3484,8 @@ const dataApi = {data:[
       "type": "Drawing",
       "measurements": "Unframed: 72 x 92 cm (28 3/8 x 36 1/4 in.)",
       "dimensions": {
-        "unframed": {
           "height": 0.72,
           "width": 0.92
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -5309,15 +3964,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 124 x 185 x 13 cm (48 13/16 x 72 13/16 x 5 1/8 in.); Unframed: 101.6 x 162.6 cm (40 x 64 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.24,
-          "width": 1.85,
-          "depth": 0.13
-        },
-        "unframed": {
           "height": 1.016,
           "width": 1.626
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -5904,15 +4552,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 180.6 x 188.6 x 11 cm (71 1/8 x 74 1/4 x 4 5/16 in.); Unframed: 159.8 x 166.4 cm (62 15/16 x 65 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.806,
-          "width": 1.886,
-          "depth": 0.11
-        },
-        "unframed": {
           "height": 1.598,
           "width": 1.664
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -6568,15 +5209,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 124.5 x 142.5 x 7 cm (49 x 56 1/8 x 2 3/4 in.); Unframed: 98.7 x 116.7 cm (38 7/8 x 45 15/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.245,
-          "width": 1.425,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 0.987,
           "width": 1.167
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -7065,15 +5699,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 103 x 233.5 x 7 cm (40 9/16 x 91 15/16 x 2 3/4 in.); Unframed: 70 x 200.5 cm (27 9/16 x 78 15/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.03,
-          "width": 2.335,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 0.7,
           "width": 2.005
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -7490,20 +6117,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 224.5 x 201.3 x 11.4 cm (88 3/8 x 79 1/4 x 4 1/2 in.); Unframed: 196 x 170 cm (77 3/16 x 66 15/16 in.); Former: 223.5 x 198 x 9 cm (88 x 77 15/16 x 3 9/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.245,
-          "width": 2.013,
-          "depth": 0.114
-        },
-        "unframed": {
           "height": 1.96,
           "width": 1.7
-        },
-        "former": {
-          "height": 2.235,
-          "width": 1.98,
-          "depth": 0.09
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -7915,15 +6530,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 221 x 282 x 10 cm (87 x 111 x 3 15/16 in.); Unframed: 184.2 x 241.6 cm (72 1/2 x 95 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.21,
-          "width": 2.82,
-          "depth": 0.1
-        },
-        "unframed": {
           "height": 1.842,
           "width": 2.416
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -8404,20 +7012,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 135.3 x 181 x 15.6 cm (53 1/4 x 71 1/4 x 6 1/8 in.); Unframed: 97 x 142.3 cm (38 3/16 x 56 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.353,
-          "width": 1.81,
-          "depth": 0.156
-        },
-        "unframed": {
           "height": 0.97,
           "width": 1.423
-        },
-        "former": {
-          "height": 1.353,
-          "width": 1.803,
-          "depth": 0.159
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -8693,15 +7289,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 208 x 171 x 12.5 cm (81 7/8 x 67 5/16 x 4 15/16 in.); Unframed: 178 x 138 cm (70 1/16 x 54 5/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.08,
-          "width": 1.71,
-          "depth": 0.125
-        },
-        "unframed": {
           "height": 1.78,
           "width": 1.38
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -9188,15 +7777,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 133 x 185.5 x 7.3 cm (52 3/8 x 73 1/16 x 2 7/8 in.); Unframed: 116.8 x 170.2 cm (46 x 67 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.33,
-          "width": 1.855,
-          "depth": 0.073
-        },
-        "unframed": {
           "height": 1.168,
           "width": 1.702
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -9547,15 +8129,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 74.9 x 101 x 10.2 cm (29 1/2 x 39 3/4 x 4 in.); Unframed: 64.5 x 91.5 cm (25 3/8 x 36 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.749,
-          "width": 1.01,
-          "depth": 0.102
-        },
-        "unframed": {
           "height": 0.645,
           "width": 0.915
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -9824,19 +8399,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 103.5 x 135.3 x 13.3 cm (40 3/4 x 53 1/4 x 5 1/4 in.); Unframed: 73.3 x 105.8 cm (28 7/8 x 41 5/8 in.); Former: 72.3 x 104 cm (28 7/16 x 40 15/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.035,
-          "width": 1.353,
-          "depth": 0.133
-        },
-        "unframed": {
           "height": 0.733,
           "width": 1.058
-        },
-        "former": {
-          "height": 0.723,
-          "width": 1.04
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -10194,15 +8758,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 88 x 87.5 x 9 cm (34 5/8 x 34 7/16 x 3 9/16 in.); Unframed: 66.5 x 66.3 cm (26 3/16 x 26 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.88,
-          "width": 0.875,
-          "depth": 0.09
-        },
-        "unframed": {
           "height": 0.665,
           "width": 0.663
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -10493,15 +9050,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 135.9 x 128 x 8.6 cm (53 1/2 x 50 3/8 x 3 3/8 in.); Unframed: 108.2 x 100.5 cm (42 5/8 x 39 9/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.359,
-          "width": 1.28,
-          "depth": 0.086
-        },
-        "unframed": {
           "height": 1.082,
           "width": 1.005
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -10865,15 +9415,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 81 x 70.5 x 7.5 cm (31 7/8 x 27 3/4 x 2 15/16 in.); Unframed: 60.3 x 50.2 cm (23 3/4 x 19 3/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.81,
-          "width": 0.705,
-          "depth": 0.075
-        },
-        "unframed": {
           "height": 0.603,
           "width": 0.502
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -11198,15 +9741,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 266.5 x 184 x 12 cm (104 15/16 x 72 7/16 x 4 3/4 in.); Unframed: 217.8 x 146 cm (85 3/4 x 57 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.665,
-          "width": 1.84,
-          "depth": 0.12
-        },
-        "unframed": {
           "height": 2.178,
           "width": 1.46
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -11414,15 +9950,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 233.5 x 184 x 12 cm (91 15/16 x 72 7/16 x 4 3/4 in.); Unframed: 202.5 x 152.7 cm (79 3/4 x 60 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.335,
-          "width": 1.84,
-          "depth": 0.12
-        },
-        "unframed": {
           "height": 2.025,
           "width": 1.527
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -12480,15 +11009,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 153 x 144 x 7 cm (60 1/4 x 56 11/16 x 2 3/4 in.); Unframed: 131 x 121.6 cm (51 9/16 x 47 7/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.53,
-          "width": 1.44,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 1.31,
           "width": 1.216
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -12705,15 +11227,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 99.5 x 73 x 8 cm (39 3/16 x 28 3/4 x 3 1/8 in.); Unframed: 83.6 x 56.8 cm (32 15/16 x 22 3/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.995,
-          "width": 0.73,
-          "depth": 0.08
-        },
-        "unframed": {
           "height": 0.836,
           "width": 0.568
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -13164,15 +11679,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 72.5 x 73.5 x 8.5 cm (28 9/16 x 28 15/16 x 3 3/8 in.); Unframed: 50.2 x 50.5 cm (19 3/4 x 19 7/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.725,
-          "width": 0.735,
-          "depth": 0.085
-        },
-        "unframed": {
           "height": 0.502,
           "width": 0.505
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -13720,14 +12228,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Unframed: 40.2 x 12.5 cm (15 13/16 x 4 15/16 in.); Painted surface: 39.6 x 11.5 cm (15 9/16 x 4 1/2 in.)",
       "dimensions": {
-        "unframed": {
-          "height": 0.402,
-          "width": 0.125
-        },
-        "painted surface": {
           "height": 0.396,
           "width": 0.115
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -13976,11 +12478,8 @@ const dataApi = {data:[
       "type": "Furniture and woodwork",
       "measurements": "Overall: 71.5 x 67.1 x 41.3 cm (28 1/8 x 26 7/16 x 16 1/4 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.715,
           "width": 0.671,
-          "depth": 0.413
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -14247,15 +12746,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 201 x 256 x 10 cm (79 1/8 x 100 13/16 x 3 15/16 in.); Unframed: 165 x 218.2 cm (64 15/16 x 85 7/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.01,
-          "width": 2.56,
-          "depth": 0.1
-        },
-        "unframed": {
           "height": 1.65,
           "width": 2.182
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -14818,15 +13310,8 @@ const dataApi = {data:[
       "type": "Ceramic",
       "measurements": "Diameter of mouth: 49.9 cm (19 5/8 in.); Overall: 50.5 cm (19 7/8 in.); Diameter of foot: 22 cm (8 11/16 in.)",
       "dimensions": {
-        "diameter of mouth": {
-          "width": 0.499
-        },
-        "overall": {
-          "height": 0.505
-        },
-        "diameter of foot": {
-          "width": 0.22
-        }
+          "height": 0.505,
+          "width": 0.4
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -15230,15 +13715,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 125.4 x 186.7 x 9.2 cm (49 3/8 x 73 1/2 x 3 5/8 in.); Unframed: 99.5 x 160.4 cm (39 3/16 x 63 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.254,
-          "width": 1.867,
-          "depth": 0.092
-        },
-        "unframed": {
           "height": 0.995,
           "width": 1.604
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -15568,10 +14046,8 @@ const dataApi = {data:[
       "type": "Drawing",
       "measurements": "Sheet: 68.8 x 56.8 cm (27 1/16 x 22 3/8 in.)",
       "dimensions": {
-        "sheet": {
           "height": 0.688,
           "width": 0.568
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -16142,15 +14618,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 204.9 x 430.3 x 6 cm (80 11/16 x 169 7/16 x 2 3/8 in.); Unframed: 201.3 x 425.6 cm (79 1/4 x 167 9/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.049,
-          "width": 4.303,
-          "depth": 0.06
-        },
-        "unframed": {
           "height": 2.013,
           "width": 4.256
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -16642,15 +15111,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 132.1 x 102.9 x 8.3 cm (52 x 40 1/2 x 3 1/4 in.); Unframed: 111 x 82 cm (43 11/16 x 32 5/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.321,
-          "width": 1.029,
-          "depth": 0.083
-        },
-        "unframed": {
           "height": 1.11,
           "width": 0.82
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -16799,15 +15261,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 89 x 105.5 x 11.5 cm (35 1/16 x 41 9/16 x 4 1/2 in.); Unframed: 60.6 x 78.1 cm (23 7/8 x 30 3/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.89,
-          "width": 1.055,
-          "depth": 0.115
-        },
-        "unframed": {
           "height": 0.606,
           "width": 0.781
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -17031,15 +15486,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 94.9 x 154.6 x 12.1 cm (37 3/8 x 60 7/8 x 4 3/4 in.); Unframed: 73 x 132.4 cm (28 3/4 x 52 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.949,
-          "width": 1.546,
-          "depth": 0.121
-        },
-        "unframed": {
           "height": 0.73,
           "width": 1.324
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -17193,15 +15641,8 @@ const dataApi = {data:[
       "type": "Metalwork",
       "measurements": "Overall: 33.8 x 25.4 x 26 cm (13 5/16 x 10 x 10 1/4 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.311,
-          "width": 0.241,
-          "depth": 0.26
-        },
-        "No Extent Specified": {
-          "width": 0.022,
-          "length": 0.038
-        }
+          "width": 0.241
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -17695,15 +16136,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 75.2 x 69 x 8.5 cm (29 5/8 x 27 3/16 x 3 3/8 in.); Unframed: 50.2 x 41.5 cm (19 3/4 x 16 5/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.752,
-          "width": 0.69,
-          "depth": 0.085
-        },
-        "unframed": {
           "height": 0.502,
           "width": 0.415
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -18080,15 +16514,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 147.5 x 120 x 5 cm (58 1/16 x 47 1/4 x 1 15/16 in.); Unframed: 127 x 97.8 cm (50 x 38 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.475,
-          "width": 1.2,
-          "depth": 0.05
-        },
-        "unframed": {
           "height": 1.27,
           "width": 0.978
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -18302,15 +16729,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 113 x 102 x 30 cm (44 1/2 x 40 3/16 x 11 13/16 in.); Base: 35 x 24 cm (13 3/4 x 9 7/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 1.13,
-          "width": 1.02,
-          "depth": 0.3
-        },
-        "base": {
-          "width": 0.35,
-          "depth": 0.24
-        }
+          "width": 1.02
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -18672,15 +17092,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 97.8 x 83.8 x 6.4 cm (38 1/2 x 33 x 2 1/2 in.); Unframed: 77.5 x 64.8 cm (30 1/2 x 25 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.978,
-          "width": 0.838,
-          "depth": 0.064
-        },
-        "unframed": {
           "height": 0.775,
           "width": 0.648
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -19217,15 +17630,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 140.3 x 119.1 x 7 cm (55 1/4 x 46 7/8 x 2 3/4 in.); Unframed: 114 x 95 cm (44 7/8 x 37 3/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.403,
-          "width": 1.191,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 1.14,
           "width": 0.95
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -19856,15 +18262,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 106.5 x 90.5 x 9 cm (41 15/16 x 35 5/8 x 3 9/16 in.); Unframed: 88.5 x 71.5 cm (34 13/16 x 28 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.065,
-          "width": 0.905,
-          "depth": 0.09
-        },
-        "unframed": {
           "height": 0.885,
           "width": 0.715
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -20093,12 +18492,8 @@ const dataApi = {data:[
       "type": "Metalwork",
       "measurements": "Overall: 11.5 cm (4 1/2 in.); Diameter: 16.1 cm (6 5/16 in.)",
       "dimensions": {
-        "diameter": {
-          "width": 0.161
-        },
-        "overall": {
+          "width": 0.161,
           "height": 0.115
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -20302,15 +18697,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 89.5 x 80.5 x 6.5 cm (35 1/4 x 31 11/16 x 2 9/16 in.); Unframed: 62 x 54 cm (24 7/16 x 21 1/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.895,
-          "width": 0.805,
-          "depth": 0.065
-        },
-        "unframed": {
           "height": 0.62,
           "width": 0.54
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -20588,11 +18976,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Codex: 23.5 x 17.3 x 4.8 cm (9 1/4 x 6 13/16 x 1 7/8 in.)",
       "dimensions": {
-        "codex": {
           "height": 0.235,
-          "width": 0.173,
-          "depth": 0.048
-        }
+          "width": 0.173
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -20995,11 +19380,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 41 x 12.7 x 15 cm (16 1/8 x 5 x 5 7/8 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.41,
-          "width": 0.127,
-          "depth": 0.15
-        }
+          "width": 0.127
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -21382,15 +19764,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 77.5 x 51 x 8.1 cm (30 1/2 x 20 1/16 x 3 3/16 in.); Unframed: 62.3 x 36.5 cm (24 1/2 x 14 3/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.775,
-          "width": 0.51,
-          "depth": 0.081
-        },
-        "unframed": {
           "height": 0.623,
           "width": 0.365
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -22186,11 +20561,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 41 x 20.3 x 12.4 cm (16 1/8 x 8 x 4 7/8 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.41,
-          "width": 0.203,
-          "depth": 0.124
-        }
+          "width": 0.203
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -22603,15 +20975,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 130 x 167.5 x 9.5 cm (51 3/16 x 65 15/16 x 3 3/4 in.); Unframed: 97.6 x 135.8 cm (38 7/16 x 53 7/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.3,
-          "width": 1.675,
-          "depth": 0.095
-        },
-        "unframed": {
           "height": 0.976,
           "width": 1.358
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -22934,11 +21299,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "35.5 x 62.5 x 2.7 cm (14 x 24 5/8 x 1 1/16 in.)",
       "dimensions": {
-        "No Extent Specified": {
           "height": 0.355,
-          "width": 0.625,
-          "depth": 0.027
-        }
+          "width": 0.625
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -23128,15 +21490,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 90 x 78 x 8 cm (35 7/16 x 30 11/16 x 3 1/8 in.); Unframed: 73.8 x 61 cm (29 1/16 x 24 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.9,
-          "width": 0.78,
-          "depth": 0.08
-        },
-        "unframed": {
           "height": 0.738,
           "width": 0.61
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -23532,11 +21887,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 40.6 x 16.5 x 54.6 cm (16 x 6 1/2 x 21 1/2 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.406,
-          "width": 0.165,
-          "depth": 0.546
-        }
+          "width": 0.165
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -23735,11 +22087,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 41.7 x 16.6 x 11.7 cm (16 7/16 x 6 9/16 x 4 5/8 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.417,
-          "width": 0.166,
-          "depth": 0.117
-        }
+          "width": 0.166
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -24084,15 +22433,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 107.5 x 121 x 7 cm (42 5/16 x 47 5/8 x 2 3/4 in.); Unframed: 80.5 x 94 cm (31 11/16 x 37 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.075,
-          "width": 1.21,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 0.805,
           "width": 0.94
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -24398,10 +22740,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 60.4 x 95 cm (23 3/4 x 37 3/8 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.604,
           "width": 0.95
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -24590,15 +22930,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 139 x 109 x 5.5 cm (54 3/4 x 42 15/16 x 2 3/16 in.); Unframed: 117 x 87 cm (46 1/16 x 34 1/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.39,
-          "width": 1.09,
-          "depth": 0.055
-        },
-        "unframed": {
           "height": 1.17,
           "width": 0.87
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -25007,10 +23340,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 16 cm (6 5/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.16,
           "length": 0.205
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -25280,15 +23611,8 @@ const dataApi = {data:[
       "type": "Textile",
       "measurements": "Overall: 178.7 x 110.5 cm (70 3/8 x 43 1/2 in.); Mounted: 197.4 x 128.2 x 6.4 cm (77 11/16 x 50 1/2 x 2 1/2 in.)",
       "dimensions": {
-        "overall": {
           "height": 1.787,
           "width": 1.105
-        },
-        "mounted": {
-          "height": 1.974,
-          "width": 1.282,
-          "depth": 0.064
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -25716,11 +24040,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "with base: 182.2 x 66.4 x 47 cm (71 3/4 x 26 1/8 x 18 1/2 in.)",
       "dimensions": {
-        "with base": {
           "height": 1.822,
-          "width": 0.664,
-          "depth": 0.47
-        }
+          "width": 0.664
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -25987,13 +24308,8 @@ const dataApi = {data:[
       "type": "Ceramic",
       "measurements": "Diameter of mouth: 15.6 cm (6 1/8 in.); Overall: 39.4 x 37.5 cm (15 1/2 x 14 3/4 in.)",
       "dimensions": {
-        "diameter of mouth": {
-          "width": 0.156
-        },
-        "overall": {
           "height": 0.394,
-          "width": 0.375
-        }
+          "width": 0.3
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -26232,10 +24548,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 170 x 13.3 cm (66 15/16 x 5 1/4 in.)",
       "dimensions": {
-        "overall": {
           "height": 1.7,
           "width": 0.133
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -26487,15 +24801,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 261 x 225 x 11 cm (102 3/4 x 88 9/16 x 4 5/16 in.); Unframed: 216 x 178.7 cm (85 1/16 x 70 3/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.61,
-          "width": 2.25,
-          "depth": 0.11
-        },
-        "unframed": {
           "height": 2.16,
           "width": 1.787
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -27367,16 +25674,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 186.6 x 160.7 x 12.7 cm (73 7/16 x 63 1/4 x 5 in.); Unframed: 185 x 160 x 10.2 cm (72 13/16 x 63 x 4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.866,
-          "width": 1.607,
-          "depth": 0.127
-        },
-        "unframed": {
           "height": 1.85,
           "width": 1.6,
-          "depth": 0.102
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -27590,14 +25889,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 184 x 186 x 9.5 cm (72 7/16 x 73 1/4 x 3 3/4 in.); Diameter: 153 cm (60 1/4 in.)",
       "dimensions": {
-        "framed": {
           "height": 1.84,
-          "width": 1.86,
-          "depth": 0.095
-        },
-        "diameter": {
-          "width": 1.53
-        }
+          "width": 1.86
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -28071,14 +26364,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "with base: 18.5 x 18.3 cm (7 5/16 x 7 3/16 in.); without base: 14 x 17.4 cm (5 1/2 x 6 7/8 in.)",
       "dimensions": {
-        "with base": {
           "height": 0.185,
           "width": 0.183
-        },
-        "without base": {
-          "height": 0.14,
-          "width": 0.174
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -28427,11 +26714,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 31.1 x 24.1 x 30.5 cm (12 1/4 x 9 1/2 x 12 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.311,
           "width": 0.241,
-          "depth": 0.305
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -28641,9 +26925,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 91.4 cm (36 in.)",
       "dimensions": {
-        "overall": {
-          "height": 0.914
-        }
+          "height": 0.914,
+          "width": 0.36
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -28844,15 +27127,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 95.5 x 113 x 7 cm (37 5/8 x 44 1/2 x 2 3/4 in.); Unframed: 65.6 x 81.5 cm (25 13/16 x 32 1/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.955,
-          "width": 1.13,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 0.656,
           "width": 0.815
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -29507,11 +27783,8 @@ const dataApi = {data:[
       "type": "Furniture and woodwork",
       "measurements": "Overall: 290.4 x 211.4 x 69.4 cm (114 5/16 x 83 1/4 x 27 5/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 2.904,
           "width": 2.114,
-          "depth": 0.694
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -29661,18 +27934,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 81 x 66.7 x 7.3 cm (31 7/8 x 26 1/4 x 2 7/8 in.); Unframed: 61.6 x 45.7 cm (24 1/4 x 18 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.81,
-          "width": 0.667,
-          "depth": 0.073
-        },
-        "unframed": {
           "height": 0.616,
           "width": 0.457
-        },
-        "No Extent Specified": {
-          
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -30202,11 +28465,8 @@ const dataApi = {data:[
       "type": "Metalwork",
       "measurements": "Overall: 10.5 x 27.5 x 21 cm (4 1/8 x 10 13/16 x 8 1/4 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.105,
-          "width": 0.275,
-          "depth": 0.21
-        }
+          "width": 0.275
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -30564,11 +28824,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 41.5 x 36 x 18.5 cm (16 5/16 x 14 3/16 x 7 5/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.415,
-          "width": 0.36,
-          "depth": 0.185
-        }
+          "width": 0.36
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -31027,10 +29284,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 229.9 x 137 cm (90 1/2 x 53 15/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 2.299,
           "width": 1.37
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -31282,15 +29537,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 87.5 x 106.5 x 7 cm (34 7/16 x 41 15/16 x 2 3/4 in.); Unframed: 72.2 x 92.4 cm (28 7/16 x 36 3/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.875,
-          "width": 1.065,
-          "depth": 0.07
-        },
-        "unframed": {
           "height": 0.722,
           "width": 0.924
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -31859,14 +30107,8 @@ const dataApi = {data:[
       "type": "Ceramic",
       "measurements": "Mihrab: 290.7 x 245.3 cm (114 7/16 x 96 9/16 in.); Frieze: 69.2 x 1563.5 cm (27 1/4 x 615 9/16 in.)",
       "dimensions": {
-        "mihrab": {
           "height": 2.907,
           "width": 2.453
-        },
-        "frieze": {
-          "height": 0.692,
-          "width": 15.635
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -32037,11 +30279,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 76.2 x 48.3 x 36.5 cm (30 x 19 x 14 3/8 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.762,
           "width": 0.483,
-          "depth": 0.365
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -32192,11 +30431,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 41.5 x 37.5 x 11 cm (16 5/16 x 14 3/4 x 4 5/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.415,
-          "width": 0.375,
-          "depth": 0.11
-        }
+          "width": 0.375
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -32415,11 +30651,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 49.2 x 23.5 x 11.4 cm (19 3/8 x 9 1/4 x 4 1/2 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.492,
-          "width": 0.235,
-          "depth": 0.114
-        }
+          "width": 0.235
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -32651,15 +30884,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 106.7 x 89.2 x 8.9 cm (42 x 35 1/8 x 3 1/2 in.); Unframed: 81.3 x 65 cm (32 x 25 9/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.067,
-          "width": 0.892,
-          "depth": 0.089
-        },
-        "unframed": {
           "height": 0.813,
           "width": 0.65
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -33292,15 +31518,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 160.5 x 119 x 9.5 cm (63 3/16 x 46 7/8 x 3 3/4 in.); Unframed: 131.3 x 89.5 cm (51 11/16 x 35 1/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.605,
-          "width": 1.19,
-          "depth": 0.095
-        },
-        "unframed": {
           "height": 1.313,
           "width": 0.895
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -33991,9 +32210,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 13.2 cm (5 3/16 in.)",
       "dimensions": {
-        "overall": {
-          "height": 0.132
-        }
+          "height": 0.132,
+          "width": 0.112
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -34245,16 +32463,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 36.9 x 38.4 x 31.8 cm (14 1/2 x 15 1/8 x 12 1/2 in.); Average: 35 x 38.4 x 31.8 cm (13 3/4 x 15 1/8 x 12 1/2 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.369,
           "width": 0.384,
-          "depth": 0.318
-        },
-        "average": {
-          "height": 0.35,
-          "width": 0.384,
-          "depth": 0.318
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -34619,15 +32829,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 172.5 x 142.5 x 14 cm (67 15/16 x 56 1/8 x 5 1/2 in.); Unframed: 142.2 x 111.8 cm (56 x 44 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.725,
-          "width": 1.425,
-          "depth": 0.14
-        },
-        "unframed": {
           "height": 1.422,
           "width": 1.118
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -34761,10 +32964,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 236.2 x 143.5 cm (93 x 56 1/2 in.)",
       "dimensions": {
-        "overall": {
           "height": 2.362,
           "width": 1.435
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -34953,15 +33154,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 123.5 x 153.5 x 12 cm (48 5/8 x 60 7/16 x 4 3/4 in.); Unframed: 92 x 123.2 cm (36 1/4 x 48 1/2 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.235,
-          "width": 1.535,
-          "depth": 0.12
-        },
-        "unframed": {
           "height": 0.92,
           "width": 1.232
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -35781,11 +33975,8 @@ const dataApi = {data:[
       "type": "Metalwork",
       "measurements": "Overall: 41.6 x 29.6 x 1.6 cm (16 3/8 x 11 5/8 x 5/8 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.416,
           "width": 0.296,
-          "depth": 0.016
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -35964,15 +34155,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 123 x 157 x 9.5 cm (48 7/16 x 61 13/16 x 3 3/4 in.); Unframed: 99.2 x 131 cm (39 1/16 x 51 9/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.23,
-          "width": 1.57,
-          "depth": 0.095
-        },
-        "unframed": {
           "height": 0.992,
           "width": 1.31
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -36225,15 +34409,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 152 x 127 x 9.5 cm (59 13/16 x 50 x 3 3/4 in.); Unframed: 126.5 x 101 cm (49 13/16 x 39 3/4 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.52,
-          "width": 1.27,
-          "depth": 0.095
-        },
-        "unframed": {
           "height": 1.265,
           "width": 1.01
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -36513,10 +34690,8 @@ const dataApi = {data:[
       "type": "Drawing",
       "measurements": "Sheet: 84.1 x 58 cm (33 1/8 x 22 13/16 in.)",
       "dimensions": {
-        "sheet": {
           "height": 0.841,
           "width": 0.58
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -36740,10 +34915,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 132.1 x 124.5 cm (52 x 49 in.)",
       "dimensions": {
-        "overall": {
           "height": 1.321,
           "width": 1.245
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -37087,15 +35260,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 67 x 78 x 7.5 cm (26 3/8 x 30 11/16 x 2 15/16 in.); Unframed: 43.4 x 53.5 cm (17 1/16 x 21 1/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.67,
-          "width": 0.78,
-          "depth": 0.075
-        },
-        "unframed": {
           "height": 0.434,
           "width": 0.535
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -37875,15 +36041,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 41.3 x 31.4 x 4.1 cm (16 1/4 x 12 3/8 x 1 5/8 in.); Unframed: 31.5 x 22 cm (12 3/8 x 8 11/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.413,
-          "width": 0.314,
-          "depth": 0.041
-        },
-        "unframed": {
           "height": 0.315,
           "width": 0.22
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -38089,10 +36248,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 12.1 x 3.1 cm (4 3/4 x 1 1/4 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.121,
           "width": 0.031
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -38287,10 +36444,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Image: 31.2 x 24.2 cm (12 5/16 x 9 1/2 in.)",
       "dimensions": {
-        "image": {
           "height": 0.312,
           "width": 0.242
-        }
       },
       "state_of_the_work": "trial proof (before letters)",
       "edition_of_the_work": "edition of 100",
@@ -38489,13 +36644,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "height: 160 cm (63 in.)",
       "dimensions": {
-        "height": {
-          "height": 1.6
-        },
-        "painted surface": {
-          "height": 1.005,
+          "height": 1.205,
           "width": 0.39
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -38705,15 +36855,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 104.5 x 130.2 x 6.5 cm (41 1/8 x 51 1/4 x 2 9/16 in.); Unframed: 86.4 x 111.7 cm (34 x 44 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.045,
-          "width": 1.302,
-          "depth": 0.065
-        },
-        "unframed": {
           "height": 0.864,
           "width": 1.117
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -38961,9 +37104,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 210 cm (82 11/16 in.)",
       "dimensions": {
-        "overall": {
-          "length": 2.1
-        }
+          "width": 1.1,
+          "height": 0.8
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -39086,27 +37228,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 40.3 x 31.4 x 4.8 cm (15 7/8 x 12 3/8 x 1 7/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.403,
-          "width": 0.314,
-          "depth": 0.048
-        },
-        "image": {
           "height": 0.31,
           "width": 0.227
-        },
-        "overall": {
-          "height": 0.352,
-          "width": 0.265,
-          "depth": 0.016
-        },
-        "back": {
-          "height": 0.341,
-          "width": 0.265
-        },
-        "curvature": {
-          "height": 0.022
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -39651,20 +37774,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 111.4 x 137.5 x 12.1 cm (43 7/8 x 54 1/8 x 4 3/4 in.); Unframed: 81 x 106 cm (31 7/8 x 41 3/4 in.); Former: 101 x 127 x 7.6 cm (39 3/4 x 50 x 3 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.114,
-          "width": 1.375,
-          "depth": 0.121
-        },
-        "unframed": {
           "height": 0.81,
           "width": 1.06
-        },
-        "former": {
-          "height": 1.01,
-          "width": 1.27,
-          "depth": 0.076
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -39926,15 +38037,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 186.7 x 97.8 x 14 cm (73 1/2 x 38 1/2 x 5 1/2 in.); Unframed: 95 x 53 cm (37 3/8 x 20 7/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.867,
-          "width": 0.978,
-          "depth": 0.14
-        },
-        "unframed": {
           "height": 0.95,
           "width": 0.53
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -40240,11 +38344,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 93.8 x 38.5 x 21.8 cm (36 15/16 x 15 3/16 x 8 9/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.938,
           "width": 0.385,
-          "depth": 0.218
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -40585,10 +38686,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 15.3 x 7.4 cm (6 x 2 15/16 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.153,
           "width": 0.074
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -40776,10 +38875,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Unframed: 96 x 70 cm (37 13/16 x 27 9/16 in.)",
       "dimensions": {
-        "unframed": {
           "height": 0.96,
           "width": 0.7
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -40936,15 +39033,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 144.5 x 117.2 x 12.1 cm (56 7/8 x 46 1/8 x 4 3/4 in.); Unframed: 116.8 x 90.5 cm (46 x 35 5/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.445,
-          "width": 1.172,
-          "depth": 0.121
-        },
-        "unframed": {
           "height": 1.168,
           "width": 0.905
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -41406,15 +39496,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 74.5 x 91.5 x 11 cm (29 5/16 x 36 x 4 5/16 in.); Unframed: 48.1 x 63.9 cm (18 15/16 x 25 3/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.745,
-          "width": 0.915,
-          "depth": 0.11
-        },
-        "unframed": {
           "height": 0.481,
           "width": 0.639
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -41550,9 +39633,8 @@ const dataApi = {data:[
       "type": "Metalwork",
       "measurements": "Diameter: 19.2 cm (7 9/16 in.)",
       "dimensions": {
-        "diameter": {
-          "width": 0.192
-        }
+          "width": 0.192,
+          "height": 0.192
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -41734,11 +39816,8 @@ const dataApi = {data:[
       "type": "Sculpture",
       "measurements": "Overall: 44.8 x 16.5 x 12.1 cm (17 5/8 x 6 1/2 x 4 3/4 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.448,
           "width": 0.165,
-          "depth": 0.121
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -41988,10 +40067,8 @@ const dataApi = {data:[
       "type": "Drawing",
       "measurements": "Sheet: 32.1 x 22 cm (12 5/8 x 8 11/16 in.)",
       "dimensions": {
-        "sheet": {
           "height": 0.321,
           "width": 0.22
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -42190,15 +40267,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 121.9 x 97.2 x 7.6 cm (48 x 38 1/4 x 3 in.); Unframed: 107 x 84 cm (42 1/8 x 33 1/16 in.)",
       "dimensions": {
-        "framed": {
-          "height": 1.219,
-          "width": 0.972,
-          "depth": 0.076
-        },
-        "unframed": {
           "height": 1.07,
           "width": 0.84
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -42378,11 +40448,8 @@ const dataApi = {data:[
       "type": "Ceramic",
       "measurements": "Overall: 92.3 x 43.8 x 41.9 cm (36 5/16 x 17 1/4 x 16 1/2 in.)",
       "dimensions": {
-        "overall": {
           "height": 0.923,
           "width": 0.438,
-          "depth": 0.419
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -42510,12 +40577,8 @@ const dataApi = {data:[
       "type": "Ceramic",
       "measurements": "Diameter: 12.8 cm (5 1/16 in.); Overall: 3.8 cm (1 1/2 in.)",
       "dimensions": {
-        "diameter": {
-          "width": 0.128
-        },
-        "overall": {
+          "width": 0.128,
           "height": 0.038
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -42744,15 +40807,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 83 x 73.5 x 9 cm (32 11/16 x 28 15/16 x 3 9/16 in.); Unframed: 53 x 46 cm (20 7/8 x 18 1/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 0.83,
-          "width": 0.735,
-          "depth": 0.09
-        },
-        "unframed": {
           "height": 0.53,
           "width": 0.46
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
@@ -43296,15 +41352,8 @@ const dataApi = {data:[
       "type": "Painting",
       "measurements": "Framed: 204 x 156 x 15 cm (80 5/16 x 61 7/16 x 5 7/8 in.); Unframed: 164.5 x 117.8 cm (64 3/4 x 46 3/8 in.)",
       "dimensions": {
-        "framed": {
-          "height": 2.04,
-          "width": 1.56,
-          "depth": 0.15
-        },
-        "unframed": {
           "height": 1.645,
           "width": 1.178
-        }
       },
       "state_of_the_work": null,
       "edition_of_the_work": null,
