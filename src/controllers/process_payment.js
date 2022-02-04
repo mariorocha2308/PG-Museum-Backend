@@ -34,7 +34,6 @@ async function postProcessPayment(req, res, next) {
                 issuer_id: response.body.issuer_id-1,
                 payment_method_id: response.body.paymentMethodId,
                 payment_type_id: response.body.payment_type_id,
-                status: response.body.status,
                 status_detail: response.body.status_detail,
                 currency_id: response.body.currency_id,
                 description: response.body.description,

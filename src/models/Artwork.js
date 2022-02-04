@@ -20,6 +20,14 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
+        dimensions_height: {
+            type: DataTypes.DECIMAL(10,2),
+            allowNull: false,
+        },
+        dimensions_width: {
+            type: DataTypes.DECIMAL(10,2),
+            allowNull: false,
+        },
         culture: {
             type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,

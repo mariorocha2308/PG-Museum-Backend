@@ -10,6 +10,7 @@ const ratingRoutes = require('./rating');
 const purchaseOrderRoutes = require('./purchase_order');
 const processPaymentRoutes = require('./process_payment');
 const { getUsersRoles } = require('../controllers/roles');
+const { postSendemail } = require('../controllers/sendemail');
 const { verifySignUp, authJwt } = require('../middleware');
 const {
   signup,
@@ -85,6 +86,8 @@ router.use('/order', purchaseOrderRoutes);
 router.use('/payment', processPaymentRoutes);
 
 router.get('/roles', getUsersRoles);
+
+router.post('/sendemail', postSendemail);
 
 
 router.get('/', (req, res) => {

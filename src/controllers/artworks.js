@@ -48,6 +48,9 @@ async function getApiToDb(req, res, next) {
                     // str = str.substring(0, 1208) + '...'; // limita la cantidad de texto en la description
                 }
 
+                let height = art.dimensions.height ? art.dimensions.height : 1;
+                let width = art.dimensions.width ? art.dimensions.width : 1;
+
                 var creators;
                 if (art.creators === 0) {
                     creators = 'anonymous';
@@ -63,6 +66,8 @@ async function getApiToDb(req, res, next) {
                     price: randomPrice,
                     rating: randomRating,
                     creation_date: creationDate,
+                    dimensions_height: height,
+                    dimensions_width: width,
                     current_location: art.current_location ? art.current_location : 'restricted information',
                     culture: art.culture,
                     technique: art.technique,
@@ -92,7 +97,8 @@ async function getApiToDb(req, res, next) {
                         culture: art.culture,
                         technique: art.technique,
                         collection: art.collection,
-                       
+                        dimensions_height: art.dimensions_height,
+                        dimensions_width: art.dimensions_width,
                         creators_description: art.creators_description,
                         stock: art.stock,
                     },
@@ -148,7 +154,7 @@ async function getByName(req, res, next) {
 
 
 async function postArtwork(req, res, next) {
-    const { title, images, price, description, creation_date, current_location, culture, technique, collection, creators_description, type } = req.body;
+    const { title, images, price, description, dimensions_height, dimensions_width, creation_date, current_location, culture, technique, collection, creators_description, type } = req.body;
     try {
         const newArtwork = await Artwork.create({
             title,
@@ -157,6 +163,8 @@ async function postArtwork(req, res, next) {
             description,
             creation_date,
             current_location,
+            dimensions_height,
+            dimensions_width,
             culture,
             technique,
             collection,
@@ -219,6 +227,8 @@ async function putArtworkById(req, res, next) {
                 price,
                 description,
                 creation_date,
+                dimensions_height,
+                dimensions_width,
                 current_location,
                 collection,
                 creators_description,
