@@ -248,7 +248,18 @@ function resetPasswordSchema(req, res, next) {
   });
   validateRequest(req, next, schema);
 }
+function validateResetTokenSchema(req, res, next) {
+  const schema = Joi.object({
+      token: Joi.string().required()
+  });
+  validateRequest(req, next, schema);
+}
 
+function validateResetToken(req, res, next) {
+  accountService.validateResetToken(req.body)
+      .then(() => res.json({ message: 'Token is valid' }))
+      .catch(next);
+}
 function resetPassword(req, res, next) {
   accountService
     .resetPassword(req.body)
@@ -267,4 +278,7 @@ module.exports = {
   forgotPasswordSchema,
   resetPasswordSchema,
   resetPassword,
+  validateResetTokenSchema,
+  validateResetToken,
+  validateRequest,
 };
