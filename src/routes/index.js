@@ -21,9 +21,9 @@ const {
   forgotPasswordSchema,
   resetPasswordSchema,
   resetPassword,
+  validateResetTokenSchema,
+  validateResetToken,
 
-  resetPasswordRequestController,
-  resetPasswordController
 } = require("../controllers/auth.controller");
 
 const { searchUser, deleteUser } = require("../controllers/users");
@@ -70,6 +70,7 @@ router.get(
 
 router.post("/auth/refreshToken", refreshToken);
 router.use("/user", usersRoutes);
+router.post('/validate-reset-token', validateResetTokenSchema, validateResetToken);
 
 //* RUTA ENCARGADA DE LAS OBRAS DE ARTE
 router.use('/artwork', artworkRoutes);
