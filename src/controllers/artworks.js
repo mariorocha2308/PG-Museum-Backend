@@ -155,6 +155,7 @@ async function getByName(req, res, next) {
 
 async function postArtwork(req, res, next) {
     const { title, images, price, description, dimensions_height, dimensions_width, creation_date, current_location, culture, technique, collection, creators_description, type } = req.body;
+
     try {
         const newArtwork = await Artwork.create({
             title,
@@ -208,7 +209,7 @@ async function getArtworkById(req, res, next) {
 
 async function putArtworkById(req, res, next) {
     const { id } = req.params;
-    const { title, images, stock, price, description, creation_date, current_location, collection, creators_description, types } = req.body;
+    const { title, images, stock, price, description, creation_date, current_location, collection, creators_description, culture, technique, types,dimensions_width,dimensions_height } = req.body;
     try {
         const artwork = await Artwork.findOne({
             where: {
@@ -225,6 +226,8 @@ async function putArtworkById(req, res, next) {
                 images,
                 stock,
                 price,
+                culture,
+                technique,
                 description,
                 creation_date,
                 dimensions_height,
