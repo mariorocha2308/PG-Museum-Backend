@@ -2,33 +2,27 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
     sequelize.define('process_payment', {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true
-        },
         state: {
             type: DataTypes.STRING,
-            //allowNull: false
+            allowNull: false
         },
-        date: {
-            type: DataTypes.ARRAY(DataTypes.INTEGER),
-            //allowNull: false
-        },
-        credit_card: {
+        date_created: {
             type: DataTypes.STRING,
+        },
+        userId: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        username: {
+            type: DataTypes.STRING,
+        },
+        products: {
+            type: DataTypes.ARRAY(DataTypes.STRING),
         },
         total: {
             type: DataTypes.INTEGER,
         },
-        userId: {
-            type: DataTypes.INTEGER,
-            //allowNull: false
-        },
-        artworksId: {
-            type: DataTypes.ARRAY(DataTypes.INTEGER),
-        },
-        username: {
+        payment_method_id: {
             type: DataTypes.STRING,
         },
         payment_type_id: {
@@ -51,6 +45,7 @@ module.exports = (sequelize) => {
         },
         email: {
             type: DataTypes.STRING,
+            allowNull: false
         },
         identification_type: {
             type: DataTypes.STRING,
@@ -69,4 +64,3 @@ module.exports = (sequelize) => {
         }
     });
 };
-
