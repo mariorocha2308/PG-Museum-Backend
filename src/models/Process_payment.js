@@ -9,11 +9,11 @@ module.exports = (sequelize) => {
         },
         state: {
             type: DataTypes.STRING,
-            allowNull: false
+            //allowNull: false
         },
         date: {
             type: DataTypes.ARRAY(DataTypes.INTEGER),
-            allowNull: false
+            //allowNull: false
         },
         credit_card: {
             type: DataTypes.STRING,
@@ -23,7 +23,7 @@ module.exports = (sequelize) => {
         },
         userId: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            //allowNull: false
         },
         artworksId: {
             type: DataTypes.ARRAY(DataTypes.INTEGER),
