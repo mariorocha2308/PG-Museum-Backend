@@ -12,7 +12,7 @@ module.exports = (sequelize) => {
             allowNull: false
         },
         date: {
-            type: DataTypes.ARRAY(DataTypes.STRING),
+            type: DataTypes.ARRAY(DataTypes.INTEGER),
             allowNull: false
         },
         credit_card: {
