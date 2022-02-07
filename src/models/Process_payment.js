@@ -7,28 +7,28 @@ module.exports = (sequelize) => {
             allowNull: false,
             primaryKey: true
         },
-        status_: {
+        state: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        date_created: {
-            type: DataTypes.STRING,
+        date: {
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false
         },
-        user_id: {
+        credit_card: {
+            type: DataTypes.STRING,
+        },
+        total: {
+            type: DataTypes.INTEGER,
+        },
+        userId: {
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+        artworksId: {
+            type: DataTypes.ARRAY(DataTypes.INTEGER),
         },
         username: {
-            type: DataTypes.STRING,
-        },
-        products: {
-            type: DataTypes.ARRAY(DataTypes.STRING),
-        },
-        total_price: {
-            type: DataTypes.INTEGER,
-        },
-        payment_method_id: {
             type: DataTypes.STRING,
         },
         payment_type_id: {
@@ -51,7 +51,6 @@ module.exports = (sequelize) => {
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
         },
         identification_type: {
             type: DataTypes.STRING,

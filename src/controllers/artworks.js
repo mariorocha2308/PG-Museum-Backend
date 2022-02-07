@@ -209,7 +209,9 @@ async function getArtworkById(req, res, next) {
 
 async function putArtworkById(req, res, next) {
     const { id } = req.params;
+
     const { title, images, stock, price, description, creation_date, current_location, collection, creators_description, culture, technique, types,dimensions_width,dimensions_height } = req.body;
+
     try {
         const artwork = await Artwork.findOne({
             where: {

@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
 
 async function postSendemail (req, res, next) {
     try {
@@ -14,23 +15,25 @@ async function postSendemail (req, res, next) {
             <h3>Mensaje:</h3>
             <p>${message}</p>
             `;
-            let transporter = nodemailer.createTransport({
-                host: 'smtp.ethereal.email',
+            let transporter = nodemailer.createTransport(smtpTransport({
+                service: 'gmail',
+                host: 'smtp.gmail.com',
                 port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: "mauuuricio@hotmail.com", // generated ethereal user
-                    pass: "LicenCompo2013", // generated ethereal password
+                    user: "mauriciogastonluquez@gmail.com", // generated ethereal user
+                    pass: "hevewkssffishnir" // generated ethereal password
                 },
-            });
+            }));
             // setup email data with unicode symbols
             let mailOptions = {
-                from: "Museum.com", // sender address
-                to: req.body.email, // list of receivers
-                subject: req.body.subject, // Subject line
-                text: req.body.message, // plain text body
+                from: "mauriciogastonluquez@gmail.com", // sender address
+                to: email, // list of receivers
+                subject: subject, // Subject line
+                text: message, // plain text body
                 html: htmlEmail, // html body
             };
+            console.log("mail options", mailOptions)
             // send mail with defined transport object
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
@@ -51,15 +54,7 @@ async function postSendemail (req, res, next) {
     }
 }
 
-
-
-            
-
-
-
-
-
-
+         
 
 
 module.exports = {
