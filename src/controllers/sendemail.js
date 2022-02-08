@@ -27,7 +27,7 @@ async function postSendemail (req, res, next) {
             }));
             // setup email data with unicode symbols
             let mailOptions = {
-                from: "mauriciogastonluquez@gmail.com", // sender address
+                from: "museum.pg.19b@gmail.com", // sender address
                 to: email, // list of receivers
                 subject: subject, // Subject line
                 text: message, // plain text body
