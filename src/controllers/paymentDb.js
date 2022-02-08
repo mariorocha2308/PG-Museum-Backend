@@ -3,8 +3,12 @@ const { Process_payment } = require('../db');
 async function postProcessPaymentDb(req, res, next) {
     try {
         // console.log("res.body es________: ", req.body);
+        let state = req.body.status
+        if (typeof state === 'undefined' || state === undefined || state === null || typeof state === null || state === '' || typeof state === 'number') {
+            state = "Invalid card information"
+        }
         const processPayment = await Process_payment.create({
-            state: req.body.status,
+            state: state,
             status_detail: req.body.status_detail,
             username: req.body.username,
             products: req.body.products,

@@ -2,11 +2,11 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
     sequelize.define('process_payment', {
-        id:{
+        id: {
             type: DataTypes.UUID,
-            allowNull: false,
+            defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
-            defaultValue: sequelize.UUIDV4
+            allowNull: false
         },
         state: {
             type: DataTypes.STRING,
@@ -51,7 +51,6 @@ module.exports = (sequelize) => {
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
         },
         identification_type: {
             type: DataTypes.STRING,
@@ -70,3 +69,4 @@ module.exports = (sequelize) => {
         }
     });
 };
+
