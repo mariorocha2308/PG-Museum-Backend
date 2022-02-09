@@ -47,7 +47,7 @@ async function getAllProcessPaymentDb(req, res, next) {
 
 async function getByIdProcessPaymentDb(req, res, next) {
     try {
-        const processPayment = await Process_payment.findOne({
+        const processPayment = await Process_payment.findAll({
             where: {
                 userId: req.params.id
             }
