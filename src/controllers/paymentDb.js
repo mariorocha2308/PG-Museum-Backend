@@ -16,7 +16,7 @@ async function postProcessPaymentDb(req, res, next) {
             date_created: req.body.date_created,
             date_approved: req.body.date_approved,
             operation_type: req.body.operation_type,
-            userId: req.body.user_id,
+            userId: req.body.user_id ? req.body.user_id : req.body.issuer_id,
             payment_method_id: req.body.payment_method_id,
             payment_type_id: req.body.payment_type_id,
             currency_id: req.body.currency_id,
