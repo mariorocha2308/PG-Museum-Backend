@@ -261,11 +261,40 @@ async function putArtworkById(req, res, next) {
     }
 };
 
+async function deleteArtworkById(req, res, next) {
+    const { id } = req.params;
+    try {
+        const artwork = await Artwork.findOne({
+            where: {
+                id,
+            },
+            include: [
+                { model: Type },
+                { model: Review }
+            ],
+        });
+        if (artwork) {
+            await artwork.destroy();
+            res.json({
+                message: 'Artwork deleted',
+            });
+        } else {
+            res.status(404).json({
+                message: 'Not found',
+            });
+        }
+    } catch (error) {
+        next(error);
+    }
+};
+
+
 
 module.exports = {
     getApiToDb,
     getByName,
     postArtwork,
     getArtworkById,
-    putArtworkById
+    putArtworkById,
+    deleteArtworkById,
 };
